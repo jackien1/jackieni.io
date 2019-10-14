@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var CHANGE_BATMODE = \"change_batmode\";","map":{"version":3,"sources":["/Users/jackieni/dev/personal/jackieni.io/src/redux/types.js"],"names":["CHANGE_BATMODE"],"mappings":"AAAA,OAAO,IAAMA,cAAc,GAAG,gBAAvB","sourcesContent":["export const CHANGE_BATMODE = \"change_batmode\";\n"]},"metadata":{},"sourceType":"module"}
