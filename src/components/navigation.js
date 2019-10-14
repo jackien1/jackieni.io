@@ -59,16 +59,6 @@ class Navigation extends Component {
           </Button>
 
           <Button
-            type="link"
-            style={{
-              fontSize: "1vw",
-              color: this.props.batmode ? "white" : "black"
-            }}
-          >
-            Thoughts
-          </Button>
-
-          <Button
             style={{
               backgroundColor: this.props.batmode ? "white" : "black",
               color: "white",
