@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2102,7 +2102,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement;
 
 
 
-class Index extends react__WEBPACK_IMPORTED_MODULE_4__["Component"] {
+class Memes extends react__WEBPACK_IMPORTED_MODULE_4__["Component"] {
   render() {
     const {
       Meta
@@ -2388,7 +2388,7 @@ const mapStateToProps = state => {
   };
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_5__["connect"])(mapStateToProps)(Index));
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_5__["connect"])(mapStateToProps)(Memes));
 
 /***/ }),
 
@@ -2481,6 +2481,7 @@ class Navigation extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
         fontSize: "1vw",
         color: this.props.batmode ? "white" : "black"
       },
+      onClick: () => next_router__WEBPACK_IMPORTED_MODULE_6___default.a.push("/projects"),
       __source: {
         fileName: _jsxFileName,
         lineNumber: 50
@@ -2494,7 +2495,7 @@ class Navigation extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 60
+        lineNumber: 61
       },
       __self: this
     }, "Thoughts"), __jsx(antd_lib_button__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -2514,7 +2515,7 @@ class Navigation extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 70
+        lineNumber: 71
       },
       __self: this
     }, __jsx("img", {
@@ -2524,7 +2525,7 @@ class Navigation extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 86
+        lineNumber: 87
       },
       __self: this
     }), __jsx("div", {
@@ -2535,7 +2536,7 @@ class Navigation extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 94
+        lineNumber: 95
       },
       __self: this
     }, "Batmode"))));
@@ -2609,7 +2610,7 @@ const CHANGE_BATMODE = "change_batmode";
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /*!******************************!*\
   !*** multi ./pages/memes.js ***!
   \******************************/

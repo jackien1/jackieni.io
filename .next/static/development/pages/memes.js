@@ -45299,18 +45299,18 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement;
 
 
 
-var Index =
+var Memes =
 /*#__PURE__*/
 function (_Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_8__["default"])(Index, _Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_8__["default"])(Memes, _Component);
 
-  function Index() {
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_4__["default"])(this, Index);
+  function Memes() {
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_4__["default"])(this, Memes);
 
-    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_6__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7__["default"])(Index).apply(this, arguments));
+    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_6__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_7__["default"])(Memes).apply(this, arguments));
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_5__["default"])(Index, [{
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_5__["default"])(Memes, [{
     key: "render",
     value: function render() {
       var Meta = antd_lib_card__WEBPACK_IMPORTED_MODULE_3___default.a.Meta;
@@ -45585,7 +45585,7 @@ function (_Component) {
     }
   }]);
 
-  return Index;
+  return Memes;
 }(react__WEBPACK_IMPORTED_MODULE_9__["Component"]);
 
 var mapStateToProps = function mapStateToProps(state) {
@@ -45595,7 +45595,7 @@ var mapStateToProps = function mapStateToProps(state) {
   };
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_10__["connect"])(mapStateToProps)(Index));
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_10__["connect"])(mapStateToProps)(Memes));
 
 /***/ }),
 
@@ -45715,6 +45715,9 @@ function (_Component) {
           fontSize: "1vw",
           color: this.props.batmode ? "white" : "black"
         },
+        onClick: function onClick() {
+          return next_router__WEBPACK_IMPORTED_MODULE_11___default.a.push("/projects");
+        },
         __source: {
           fileName: _jsxFileName,
           lineNumber: 50
@@ -45728,7 +45731,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 61
         },
         __self: this
       }, "Thoughts"), __jsx(antd_lib_button__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -45748,7 +45751,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70
+          lineNumber: 71
         },
         __self: this
       }, __jsx("img", {
@@ -45758,7 +45761,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86
+          lineNumber: 87
         },
         __self: this
       }), __jsx("div", {
@@ -45769,7 +45772,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 94
+          lineNumber: 95
         },
         __self: this
       }, "Batmode"))));
@@ -45843,7 +45846,7 @@ var CHANGE_BATMODE = "change_batmode";
 
 /***/ }),
 
-/***/ 4:
+/***/ 8:
 /*!*******************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fmemes&absolutePagePath=%2FUsers%2Fjackieni%2Fdev%2Fpersonal%2Fjackieni.io%2Fpages%2Fmemes.js ***!
   \*******************************************************************************************************************************************/
@@ -45866,5 +45869,5 @@ module.exports = dll_13346faca0e924a89b24;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js","styles"]]]);
+},[[8,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=memes.js.map

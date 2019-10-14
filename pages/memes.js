@@ -3,7 +3,7 @@ import { Icon, Card, Tag, Timeline } from "antd";
 import { connect } from "react-redux";
 import Navigation from "../src/components/navigation";
 
-class Index extends Component {
+class Memes extends Component {
   render() {
     const { Meta } = Card;
 
@@ -179,4 +179,4 @@ const mapStateToProps = state => {
   return { batmode };
 };
 
-export default connect(mapStateToProps)(Index);
+export default connect(mapStateToProps)(Memes);

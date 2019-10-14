@@ -53,6 +53,7 @@ class Navigation extends Component {
               fontSize: "1vw",
               color: this.props.batmode ? "white" : "black"
             }}
+            onClick={() => Router.push("/projects")}
           >
             Projects
           </Button>
