@@ -38528,7 +38528,7 @@ function (_Component) {
           lineNumber: 46
         },
         __self: this
-      }, "Soy Jackie.")), __jsx("div", {
+      }, "".concat(this.props.batmode ? "I'm Batman!" : "Soy Jackie."))), __jsx("div", {
         style: {
           display: "flex",
           justifyContent: "space-around",
@@ -38822,7 +38822,7 @@ var CHANGE_BATMODE = "change_batmode";
 
 /***/ }),
 
-/***/ 2:
+/***/ 0:
 /*!**************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fjackieni%2Fdev%2Fpersonal%2Fjackieni.io%2Fpages%2Findex.js ***!
   \**************************************************************************************************************************************/
@@ -38845,5 +38845,5 @@ module.exports = dll_13346faca0e924a89b24;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js","styles"]]]);
+},[[0,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

@@ -50,7 +50,7 @@ class Index extends Component {
                   color: this.props.batmode ? "white" : "black"
                 }}
               >
-                Soy Jackie.
+                {`${this.props.batmode ? "I'm Batman!" : "Soy Jackie."}`}
               </div>
             </div>
 

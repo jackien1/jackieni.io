@@ -2165,7 +2165,7 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
         lineNumber: 46
       },
       __self: this
-    }, "Soy Jackie.")), __jsx("div", {
+    }, `${this.props.batmode ? "I'm Batman!" : "Soy Jackie."}`)), __jsx("div", {
       style: {
         display: "flex",
         justifyContent: "space-around",
