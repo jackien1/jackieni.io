@@ -1319,19 +1319,19 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_2___default.a {
         lineNumber: 11
       },
       __self: this
-    }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_2__["Head"], {
+    }, __jsx("title", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 12
       },
       __self: this
-    }, __jsx("title", {
+    }, "Jackie Ni"), __jsx(next_document__WEBPACK_IMPORTED_MODULE_2__["Head"], {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 13
       },
       __self: this
-    }, "Jackie Ni"), __jsx("link", {
+    }, __jsx("link", {
       rel: "shortcut icon",
       type: "image/png",
       href: "/static/face.png",

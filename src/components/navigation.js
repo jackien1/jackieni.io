@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Link from "next/link";
 import { connect } from "react-redux";
 import { changeBatmode } from "../redux/actions";
+import Router from "next/router";
 import { Button } from "antd";
 
 class Navigation extends Component {
@@ -23,6 +24,7 @@ class Navigation extends Component {
             fontSize: "1vw",
             color: this.props.batmode ? "white" : "black"
           }}
+          onClick={() => Router.push("/")}
         >
           jackieni.io
         </Button>
@@ -40,6 +42,7 @@ class Navigation extends Component {
               fontSize: "1vw",
               color: this.props.batmode ? "white" : "black"
             }}
+            onClick={() => Router.push("/memes")}
           >
             Memes
           </Button>

@@ -9,8 +9,8 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
+        <title>Jackie Ni</title>
         <Head>
-          <title>Jackie Ni</title>
           <link rel="shortcut icon" type="image/png" href="/static/face.png" />
         </Head>
         <body>
