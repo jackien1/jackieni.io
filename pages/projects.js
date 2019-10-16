@@ -135,7 +135,6 @@ class Projects extends Component {
             <Card
               style={{
                 width: "20vw",
-                height: "20vw",
                 padding: "1vw",
                 backgroundColor: this.props.batmode ? "black" : "white"
               }}
@@ -163,7 +162,6 @@ class Projects extends Component {
             <Card
               style={{
                 width: "20vw",
-                height: "20vw",
                 padding: "1vw",
                 backgroundColor: this.props.batmode ? "black" : "white"
               }}
@@ -191,7 +189,6 @@ class Projects extends Component {
             <Card
               style={{
                 width: "20vw",
-                height: "20vw",
                 padding: "1vw",
                 backgroundColor: this.props.batmode ? "black" : "white"
               }}
@@ -219,7 +216,6 @@ class Projects extends Component {
             <Card
               style={{
                 width: "20vw",
-                height: "20vw",
                 padding: "1vw",
                 backgroundColor: this.props.batmode ? "black" : "white"
               }}
@@ -257,7 +253,6 @@ class Projects extends Component {
             <Card
               style={{
                 width: "20vw",
-                height: "20vw",
                 padding: "1vw",
                 backgroundColor: this.props.batmode ? "black" : "white"
               }}
@@ -284,7 +279,6 @@ class Projects extends Component {
             <Card
               style={{
                 width: "20vw",
-                height: "20vw",
                 padding: "1vw",
                 backgroundColor: this.props.batmode ? "black" : "white"
               }}
@@ -311,7 +305,6 @@ class Projects extends Component {
             <Card
               style={{
                 width: "20vw",
-                height: "20vw",
                 padding: "1vw",
                 backgroundColor: this.props.batmode ? "black" : "white"
               }}
@@ -339,7 +332,6 @@ class Projects extends Component {
             <Card
               style={{
                 width: "20vw",
-                height: "20vw",
                 padding: "1vw",
                 backgroundColor: this.props.batmode ? "black" : "white"
               }}
