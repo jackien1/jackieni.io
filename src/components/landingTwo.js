@@ -1,0 +1,113 @@
+import React, { Component } from "react";
+import { Icon, Avatar } from "antd";
+
+class LandingTwo extends Component {
+  render() {
+    return (
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "row",
+          height: "70vh",
+          backgroundColor: "#1890ff"
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column"
+          }}
+        >
+          <div>
+            <div
+              style={{
+                fontWeight: "bold",
+                fontSize: "4vw",
+                color: "white",
+                textAlign: "center"
+              }}
+            >
+              Ni-hilism.
+            </div>
+            <div
+              style={{
+                fontWeight: "bold",
+                fontSize: "1vw",
+                color: "white",
+                textAlign: "center"
+              }}
+            >
+              The philosophy I follow when I'm not tired (or remember that it
+              exists).
+            </div>
+
+            <div
+              style={{
+                display: "flex",
+                width: "100vw",
+                justifyContent: "space-around",
+                marginTop: "4vw"
+              }}
+            >
+              <div style={{ display: "flex", flexDirection: "column" }}>
+                <Avatar
+                  icon="apple"
+                  size={150}
+                  style={{ backgroundColor: "white", color: "black" }}
+                />
+                <div
+                  style={{
+                    fontSize: "2vw",
+                    color: "white",
+                    fontWeight: "bold",
+                    textAlign: "center"
+                  }}
+                >
+                  Food
+                </div>
+              </div>
+              <div style={{ display: "flex", flexDirection: "column" }}>
+                <Avatar
+                  icon="smile"
+                  size={150}
+                  style={{ backgroundColor: "white", color: "black" }}
+                />
+                <div
+                  style={{
+                    fontSize: "2vw",
+                    color: "white",
+                    fontWeight: "bold",
+                    textAlign: "center"
+                  }}
+                >
+                  Humor
+                </div>
+              </div>
+              <div style={{ display: "flex", flexDirection: "column" }}>
+                <Avatar
+                  icon="control"
+                  size={150}
+                  style={{ backgroundColor: "white", color: "black" }}
+                />
+                <div
+                  style={{
+                    fontSize: "2vw",
+                    color: "white",
+                    fontWeight: "bold",
+                    textAlign: "center"
+                  }}
+                >
+                  Balance
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default LandingTwo;

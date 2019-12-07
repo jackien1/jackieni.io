@@ -258,6 +258,17 @@ module.exports = _interopRequireWildcard;
 
 /***/ }),
 
+/***/ "./node_modules/antd/lib/avatar/style/css.js":
+/*!***************************************************!*\
+  !*** ./node_modules/antd/lib/avatar/style/css.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "./node_modules/antd/lib/button/style/css.js":
 /*!***************************************************!*\
   !*** ./node_modules/antd/lib/button/style/css.js ***!
@@ -2068,24 +2079,22 @@ if (false) {} else {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var antd_lib_icon_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! antd/lib/icon/style/css */ "./node_modules/antd/lib/icon/style/css.js");
-/* harmony import */ var antd_lib_icon_style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(antd_lib_icon_style_css__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var antd_lib_icon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! antd/lib/icon */ "antd/lib/icon");
-/* harmony import */ var antd_lib_icon__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd_lib_icon__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ "react-redux");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _src_components_navigation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../src/components/navigation */ "./src/components/navigation.js");
-
-
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _src_components_navigation__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../src/components/navigation */ "./src/components/navigation.js");
+/* harmony import */ var _src_components_landingOne__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../src/components/landingOne */ "./src/components/landingOne.js");
+/* harmony import */ var _src_components_landingTwo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../src/components/landingTwo */ "./src/components/landingTwo.js");
 var _jsxFileName = "/Users/jackieni/dev/personal/jackieni.io/pages/index.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
-class Index extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
+
+
+class Index extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   render() {
     return __jsx("div", {
       style: {
@@ -2094,115 +2103,28 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 9
+        lineNumber: 11
       },
       __self: this
-    }, __jsx(_src_components_navigation__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    }, __jsx(_src_components_navigation__WEBPACK_IMPORTED_MODULE_2__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 15
+        lineNumber: 17
       },
       __self: this
-    }), __jsx("div", {
-      style: {
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        flexDirection: "row",
-        height: "95vh",
-        paddingBottom: "5vh"
-      },
+    }), __jsx(_src_components_landingOne__WEBPACK_IMPORTED_MODULE_3__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 16
+        lineNumber: 18
       },
       __self: this
-    }, __jsx("img", {
-      style: {
-        width: "30%"
-      },
-      src: `/static/${this.props.batmode ? "batFace.png" : "face.png"}`,
+    }), __jsx(_src_components_landingTwo__WEBPACK_IMPORTED_MODULE_4__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26
+        lineNumber: 19
       },
       __self: this
-    }), __jsx("div", {
-      style: {
-        display: "flex",
-        flexDirection: "column"
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 30
-      },
-      __self: this
-    }, __jsx("div", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 36
-      },
-      __self: this
-    }, __jsx("div", {
-      style: {
-        fontWeight: "bold",
-        fontSize: "6vw",
-        color: this.props.batmode ? "white" : "black"
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 37
-      },
-      __self: this
-    }, "Greetings."), __jsx("div", {
-      style: {
-        textAlign: "center",
-        fontSize: "1.2vw",
-        color: this.props.batmode ? "white" : "black"
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 46
-      },
-      __self: this
-    }, `${this.props.batmode ? "I'm Batman!" : "Soy Jackie."}`)), __jsx("div", {
-      style: {
-        display: "flex",
-        justifyContent: "space-around",
-        alignItems: "center",
-        marginTop: "2vw",
-        width: "100%"
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 57
-      },
-      __self: this
-    }, __jsx(antd_lib_icon__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      onClick: () => window.open("https://github.com/jackien1", "_blank"),
-      type: "github",
-      style: {
-        fontSize: "2vw",
-        color: this.props.batmode ? "white" : "black"
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 66
-      },
-      __self: this
-    }), __jsx(antd_lib_icon__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      onClick: () => window.open("https://www.linkedin.com/in/jackie-ni-99b07016a/", "_blank"),
-      type: "linkedin",
-      style: {
-        fontSize: "2vw",
-        color: this.props.batmode ? "white" : "black"
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 76
-      },
-      __self: this
-    })))));
+    }));
   }
 
 }
@@ -2216,7 +2138,338 @@ const mapStateToProps = state => {
   };
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_3__["connect"])(mapStateToProps)(Index));
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["connect"])(mapStateToProps)(Index));
+
+/***/ }),
+
+/***/ "./src/components/landingOne.js":
+/*!**************************************!*\
+  !*** ./src/components/landingOne.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var antd_lib_icon_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! antd/lib/icon/style/css */ "./node_modules/antd/lib/icon/style/css.js");
+/* harmony import */ var antd_lib_icon_style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(antd_lib_icon_style_css__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var antd_lib_icon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! antd/lib/icon */ "antd/lib/icon");
+/* harmony import */ var antd_lib_icon__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd_lib_icon__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+
+
+var _jsxFileName = "/Users/jackieni/dev/personal/jackieni.io/src/components/landingOne.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
+
+
+class LandingOne extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
+  render() {
+    return __jsx("div", {
+      style: {
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: "row",
+        height: "85vh",
+        paddingBottom: "5vh"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 7
+      },
+      __self: this
+    }, __jsx("img", {
+      style: {
+        width: "30%"
+      },
+      src: `/static/${this.props.batmode ? "batFace.png" : "face.png"}`,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 17
+      },
+      __self: this
+    }), __jsx("div", {
+      style: {
+        display: "flex",
+        flexDirection: "column"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21
+      },
+      __self: this
+    }, __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27
+      },
+      __self: this
+    }, __jsx("div", {
+      style: {
+        fontWeight: "bold",
+        fontSize: "6vw",
+        color: this.props.batmode ? "white" : "black"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28
+      },
+      __self: this
+    }, "Greetings."), __jsx("div", {
+      style: {
+        textAlign: "center",
+        fontSize: "1.2vw",
+        color: this.props.batmode ? "white" : "black"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 37
+      },
+      __self: this
+    }, `${this.props.batmode ? "I'm Batman!" : "Soy Jackie."}`)), __jsx("div", {
+      style: {
+        display: "flex",
+        justifyContent: "space-around",
+        alignItems: "center",
+        marginTop: "2vw",
+        width: "100%"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 48
+      },
+      __self: this
+    }, __jsx(antd_lib_icon__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      onClick: () => window.open("https://github.com/jackien1", "_blank"),
+      type: "github",
+      style: {
+        fontSize: "2vw",
+        color: this.props.batmode ? "white" : "black"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 57
+      },
+      __self: this
+    }), __jsx(antd_lib_icon__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      onClick: () => window.open("https://www.linkedin.com/in/jackie-ni-99b07016a/", "_blank"),
+      type: "linkedin",
+      style: {
+        fontSize: "2vw",
+        color: this.props.batmode ? "white" : "black"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 67
+      },
+      __self: this
+    }))));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (LandingOne);
+
+/***/ }),
+
+/***/ "./src/components/landingTwo.js":
+/*!**************************************!*\
+  !*** ./src/components/landingTwo.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var antd_lib_avatar_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! antd/lib/avatar/style/css */ "./node_modules/antd/lib/avatar/style/css.js");
+/* harmony import */ var antd_lib_avatar_style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(antd_lib_avatar_style_css__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var antd_lib_avatar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! antd/lib/avatar */ "antd/lib/avatar");
+/* harmony import */ var antd_lib_avatar__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd_lib_avatar__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+
+
+var _jsxFileName = "/Users/jackieni/dev/personal/jackieni.io/src/components/landingTwo.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
+
+
+class LandingTwo extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
+  render() {
+    return __jsx("div", {
+      style: {
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: "row",
+        height: "70vh",
+        backgroundColor: "#1890ff"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 7
+      },
+      __self: this
+    }, __jsx("div", {
+      style: {
+        display: "flex",
+        flexDirection: "column"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 17
+      },
+      __self: this
+    }, __jsx("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 23
+      },
+      __self: this
+    }, __jsx("div", {
+      style: {
+        fontWeight: "bold",
+        fontSize: "4vw",
+        color: "white",
+        textAlign: "center"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24
+      },
+      __self: this
+    }, "Ni-hilism."), __jsx("div", {
+      style: {
+        fontWeight: "bold",
+        fontSize: "1vw",
+        color: "white",
+        textAlign: "center"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 34
+      },
+      __self: this
+    }, "The philosophy I follow when I'm not tired (or remember that it exists)."), __jsx("div", {
+      style: {
+        display: "flex",
+        width: "100vw",
+        justifyContent: "space-around",
+        marginTop: "4vw"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 46
+      },
+      __self: this
+    }, __jsx("div", {
+      style: {
+        display: "flex",
+        flexDirection: "column"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 54
+      },
+      __self: this
+    }, __jsx(antd_lib_avatar__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      icon: "apple",
+      size: 150,
+      style: {
+        backgroundColor: "white",
+        color: "black"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 55
+      },
+      __self: this
+    }), __jsx("div", {
+      style: {
+        fontSize: "2vw",
+        color: "white",
+        fontWeight: "bold",
+        textAlign: "center"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 60
+      },
+      __self: this
+    }, "Food")), __jsx("div", {
+      style: {
+        display: "flex",
+        flexDirection: "column"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 71
+      },
+      __self: this
+    }, __jsx(antd_lib_avatar__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      icon: "smile",
+      size: 150,
+      style: {
+        backgroundColor: "white",
+        color: "black"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 72
+      },
+      __self: this
+    }), __jsx("div", {
+      style: {
+        fontSize: "2vw",
+        color: "white",
+        fontWeight: "bold",
+        textAlign: "center"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 77
+      },
+      __self: this
+    }, "Humor")), __jsx("div", {
+      style: {
+        display: "flex",
+        flexDirection: "column"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 88
+      },
+      __self: this
+    }, __jsx(antd_lib_avatar__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      icon: "control",
+      size: 150,
+      style: {
+        backgroundColor: "white",
+        color: "black"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 89
+      },
+      __self: this
+    }), __jsx("div", {
+      style: {
+        fontSize: "2vw",
+        color: "white",
+        fontWeight: "bold",
+        textAlign: "center"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 94
+      },
+      __self: this
+    }, "Balance"))))));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (LandingTwo);
 
 /***/ }),
 
@@ -2436,6 +2689,17 @@ const CHANGE_BATMODE = "change_batmode";
 
 module.exports = __webpack_require__(/*! /Users/jackieni/dev/personal/jackieni.io/pages/index.js */"./pages/index.js");
 
+
+/***/ }),
+
+/***/ "antd/lib/avatar":
+/*!**********************************!*\
+  !*** external "antd/lib/avatar" ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("antd/lib/avatar");
 
 /***/ }),
 
