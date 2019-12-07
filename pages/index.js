@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import Navigation from "../src/components/navigation";
 import LandingOne from "../src/components/landingOne";
 import LandingTwo from "../src/components/landingTwo";
+import Footer from "../src/components/footer";
 
 class Index extends Component {
   render() {
@@ -17,6 +18,7 @@ class Index extends Component {
         <Navigation />
         <LandingOne />
         <LandingTwo />
+        <Footer />
       </div>
     );
   }

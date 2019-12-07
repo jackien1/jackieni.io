@@ -1,8 +1,10 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 import { Icon } from "antd";
 
 class LandingOne extends Component {
   render() {
+    console.log(this.props.batmode);
     return (
       <div
         style={{
@@ -10,7 +12,7 @@ class LandingOne extends Component {
           justifyContent: "center",
           alignItems: "center",
           flexDirection: "row",
-          height: "85vh",
+          height: "80vh",
           paddingBottom: "5vh"
         }}
       >
@@ -84,4 +86,9 @@ class LandingOne extends Component {
   }
 }
 
-export default LandingOne;
+const mapStateToProps = state => {
+  const { batmode } = state.theme;
+  return { batmode };
+};
+
+export default connect(mapStateToProps)(LandingOne);

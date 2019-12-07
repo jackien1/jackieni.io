@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 import { Icon, Avatar } from "antd";
 
 class LandingTwo extends Component {
@@ -10,7 +11,7 @@ class LandingTwo extends Component {
           justifyContent: "center",
           alignItems: "center",
           flexDirection: "row",
-          height: "70vh",
+          height: "80vh",
           backgroundColor: "#1890ff"
         }}
       >
@@ -110,4 +111,9 @@ class LandingTwo extends Component {
   }
 }
 
-export default LandingTwo;
+const mapStateToProps = state => {
+  const { batmode } = state.theme;
+  return { batmode };
+};
+
+export default connect(mapStateToProps)(LandingTwo);

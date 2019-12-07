@@ -2086,8 +2086,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _src_components_navigation__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../src/components/navigation */ "./src/components/navigation.js");
 /* harmony import */ var _src_components_landingOne__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../src/components/landingOne */ "./src/components/landingOne.js");
 /* harmony import */ var _src_components_landingTwo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../src/components/landingTwo */ "./src/components/landingTwo.js");
+/* harmony import */ var _src_components_footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../src/components/footer */ "./src/components/footer.js");
 var _jsxFileName = "/Users/jackieni/dev/personal/jackieni.io/pages/index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -2103,25 +2105,31 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 11
+        lineNumber: 12
       },
       __self: this
     }, __jsx(_src_components_navigation__WEBPACK_IMPORTED_MODULE_2__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17
+        lineNumber: 18
       },
       __self: this
     }), __jsx(_src_components_landingOne__WEBPACK_IMPORTED_MODULE_3__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 18
+        lineNumber: 19
       },
       __self: this
     }), __jsx(_src_components_landingTwo__WEBPACK_IMPORTED_MODULE_4__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 19
+        lineNumber: 20
+      },
+      __self: this
+    }), __jsx(_src_components_footer__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 21
       },
       __self: this
     }));
@@ -2142,6 +2150,70 @@ const mapStateToProps = state => {
 
 /***/ }),
 
+/***/ "./src/components/footer.js":
+/*!**********************************!*\
+  !*** ./src/components/footer.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/jackieni/dev/personal/jackieni.io/src/components/footer.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+class Footer extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  render() {
+    return __jsx("div", {
+      style: {
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: "row",
+        backgroundColor: this.props.batmode ? "black" : "white",
+        height: "10vh"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 8
+      },
+      __self: this
+    }, __jsx("div", {
+      style: {
+        display: "flex",
+        fontSize: "1vw",
+        fontWeight: "bold",
+        color: this.props.batmode ? "white" : "black"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18
+      },
+      __self: this
+    }, "Not Real Copyright \xA9 2019 Jackie Ni"));
+  }
+
+}
+
+const mapStateToProps = state => {
+  const {
+    batmode
+  } = state.theme;
+  return {
+    batmode
+  };
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["connect"])(mapStateToProps)(Footer));
+
+/***/ }),
+
 /***/ "./src/components/landingOne.js":
 /*!**************************************!*\
   !*** ./src/components/landingOne.js ***!
@@ -2157,26 +2229,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var antd_lib_icon__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd_lib_icon__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_3__);
 
 
 var _jsxFileName = "/Users/jackieni/dev/personal/jackieni.io/src/components/landingOne.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 
+
 class LandingOne extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
   render() {
+    console.log(this.props.batmode);
     return __jsx("div", {
       style: {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "row",
-        height: "85vh",
+        height: "80vh",
         paddingBottom: "5vh"
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 7
+        lineNumber: 9
       },
       __self: this
     }, __jsx("img", {
@@ -2186,7 +2262,7 @@ class LandingOne extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
       src: `/static/${this.props.batmode ? "batFace.png" : "face.png"}`,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17
+        lineNumber: 19
       },
       __self: this
     }), __jsx("div", {
@@ -2196,13 +2272,13 @@ class LandingOne extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 21
+        lineNumber: 23
       },
       __self: this
     }, __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27
+        lineNumber: 29
       },
       __self: this
     }, __jsx("div", {
@@ -2213,7 +2289,7 @@ class LandingOne extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28
+        lineNumber: 30
       },
       __self: this
     }, "Greetings."), __jsx("div", {
@@ -2224,7 +2300,7 @@ class LandingOne extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 37
+        lineNumber: 39
       },
       __self: this
     }, `${this.props.batmode ? "I'm Batman!" : "Soy Jackie."}`)), __jsx("div", {
@@ -2237,7 +2313,7 @@ class LandingOne extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 48
+        lineNumber: 50
       },
       __self: this
     }, __jsx(antd_lib_icon__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -2249,7 +2325,7 @@ class LandingOne extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 57
+        lineNumber: 59
       },
       __self: this
     }), __jsx(antd_lib_icon__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -2261,7 +2337,7 @@ class LandingOne extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 67
+        lineNumber: 69
       },
       __self: this
     }))));
@@ -2269,7 +2345,16 @@ class LandingOne extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
 
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (LandingOne);
+const mapStateToProps = state => {
+  const {
+    batmode
+  } = state.theme;
+  return {
+    batmode
+  };
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_3__["connect"])(mapStateToProps)(LandingOne));
 
 /***/ }),
 
@@ -2288,10 +2373,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var antd_lib_avatar__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd_lib_avatar__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_3__);
 
 
 var _jsxFileName = "/Users/jackieni/dev/personal/jackieni.io/src/components/landingTwo.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
+
 
 
 class LandingTwo extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
@@ -2302,12 +2390,12 @@ class LandingTwo extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "row",
-        height: "70vh",
+        height: "80vh",
         backgroundColor: "#1890ff"
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 7
+        lineNumber: 8
       },
       __self: this
     }, __jsx("div", {
@@ -2317,13 +2405,13 @@ class LandingTwo extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17
+        lineNumber: 18
       },
       __self: this
     }, __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 23
+        lineNumber: 24
       },
       __self: this
     }, __jsx("div", {
@@ -2335,7 +2423,7 @@ class LandingTwo extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 24
+        lineNumber: 25
       },
       __self: this
     }, "Ni-hilism."), __jsx("div", {
@@ -2347,7 +2435,7 @@ class LandingTwo extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 34
+        lineNumber: 35
       },
       __self: this
     }, "The philosophy I follow when I'm not tired (or remember that it exists)."), __jsx("div", {
@@ -2359,7 +2447,7 @@ class LandingTwo extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 46
+        lineNumber: 47
       },
       __self: this
     }, __jsx("div", {
@@ -2369,7 +2457,7 @@ class LandingTwo extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 54
+        lineNumber: 55
       },
       __self: this
     }, __jsx(antd_lib_avatar__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -2381,7 +2469,7 @@ class LandingTwo extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 55
+        lineNumber: 56
       },
       __self: this
     }), __jsx("div", {
@@ -2393,7 +2481,7 @@ class LandingTwo extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 60
+        lineNumber: 61
       },
       __self: this
     }, "Food")), __jsx("div", {
@@ -2403,7 +2491,7 @@ class LandingTwo extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 71
+        lineNumber: 72
       },
       __self: this
     }, __jsx(antd_lib_avatar__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -2415,7 +2503,7 @@ class LandingTwo extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 72
+        lineNumber: 73
       },
       __self: this
     }), __jsx("div", {
@@ -2427,7 +2515,7 @@ class LandingTwo extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 77
+        lineNumber: 78
       },
       __self: this
     }, "Humor")), __jsx("div", {
@@ -2437,7 +2525,7 @@ class LandingTwo extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 88
+        lineNumber: 89
       },
       __self: this
     }, __jsx(antd_lib_avatar__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -2449,7 +2537,7 @@ class LandingTwo extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 89
+        lineNumber: 90
       },
       __self: this
     }), __jsx("div", {
@@ -2461,7 +2549,7 @@ class LandingTwo extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 94
+        lineNumber: 95
       },
       __self: this
     }, "Balance"))))));
@@ -2469,7 +2557,16 @@ class LandingTwo extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
 
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (LandingTwo);
+const mapStateToProps = state => {
+  const {
+    batmode
+  } = state.theme;
+  return {
+    batmode
+  };
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_3__["connect"])(mapStateToProps)(LandingTwo));
 
 /***/ }),
 

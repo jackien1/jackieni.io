@@ -38685,6 +38685,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _src_components_navigation__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../src/components/navigation */ "./src/components/navigation.js");
 /* harmony import */ var _src_components_landingOne__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../src/components/landingOne */ "./src/components/landingOne.js");
 /* harmony import */ var _src_components_landingTwo__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../src/components/landingTwo */ "./src/components/landingTwo.js");
+/* harmony import */ var _src_components_footer__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../src/components/footer */ "./src/components/footer.js");
 
 
 
@@ -38692,6 +38693,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var _jsxFileName = "/Users/jackieni/dev/personal/jackieni.io/pages/index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
+
 
 
 
@@ -38719,25 +38721,31 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 11
+          lineNumber: 12
         },
         __self: this
       }, __jsx(_src_components_navigation__WEBPACK_IMPORTED_MODULE_7__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 18
         },
         __self: this
       }), __jsx(_src_components_landingOne__WEBPACK_IMPORTED_MODULE_8__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 18
+          lineNumber: 19
         },
         __self: this
       }), __jsx(_src_components_landingTwo__WEBPACK_IMPORTED_MODULE_9__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19
+          lineNumber: 20
+        },
+        __self: this
+      }), __jsx(_src_components_footer__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
         },
         __self: this
       }));
@@ -38755,6 +38763,91 @@ var mapStateToProps = function mapStateToProps(state) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_6__["connect"])(mapStateToProps)(Index));
+
+/***/ }),
+
+/***/ "./src/components/footer.js":
+/*!**********************************!*\
+  !*** ./src/components/footer.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+
+
+
+
+
+var _jsxFileName = "/Users/jackieni/dev/personal/jackieni.io/src/components/footer.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
+
+
+
+var Footer =
+/*#__PURE__*/
+function (_Component) {
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Footer, _Component);
+
+  function Footer() {
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Footer);
+
+    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Footer).apply(this, arguments));
+  }
+
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Footer, [{
+    key: "render",
+    value: function render() {
+      return __jsx("div", {
+        style: {
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "row",
+          backgroundColor: this.props.batmode ? "black" : "white",
+          height: "10vh"
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8
+        },
+        __self: this
+      }, __jsx("div", {
+        style: {
+          display: "flex",
+          fontSize: "1vw",
+          fontWeight: "bold",
+          color: this.props.batmode ? "white" : "black"
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18
+        },
+        __self: this
+      }, "Not Real Copyright \xA9 2019 Jackie Ni"));
+    }
+  }]);
+
+  return Footer;
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+
+var mapStateToProps = function mapStateToProps(state) {
+  var batmode = state.theme.batmode;
+  return {
+    batmode: batmode
+  };
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_6__["connect"])(mapStateToProps)(Footer));
 
 /***/ }),
 
@@ -38778,6 +38871,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 
 
 
@@ -38787,6 +38881,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var _jsxFileName = "/Users/jackieni/dev/personal/jackieni.io/src/components/landingOne.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement;
+
 
 
 var LandingOne =
@@ -38803,18 +38898,19 @@ function (_Component) {
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(LandingOne, [{
     key: "render",
     value: function render() {
+      console.log(this.props.batmode);
       return __jsx("div", {
         style: {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
           flexDirection: "row",
-          height: "85vh",
+          height: "80vh",
           paddingBottom: "5vh"
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 7
+          lineNumber: 9
         },
         __self: this
       }, __jsx("img", {
@@ -38824,7 +38920,7 @@ function (_Component) {
         src: "/static/".concat(this.props.batmode ? "batFace.png" : "face.png"),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 19
         },
         __self: this
       }), __jsx("div", {
@@ -38834,13 +38930,13 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 23
         },
         __self: this
       }, __jsx("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 27
+          lineNumber: 29
         },
         __self: this
       }, __jsx("div", {
@@ -38851,7 +38947,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28
+          lineNumber: 30
         },
         __self: this
       }, "Greetings."), __jsx("div", {
@@ -38862,7 +38958,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 39
         },
         __self: this
       }, "".concat(this.props.batmode ? "I'm Batman!" : "Soy Jackie."))), __jsx("div", {
@@ -38875,7 +38971,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 50
         },
         __self: this
       }, __jsx(antd_lib_icon__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -38889,7 +38985,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 59
         },
         __self: this
       }), __jsx(antd_lib_icon__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -38903,7 +38999,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67
+          lineNumber: 69
         },
         __self: this
       }))));
@@ -38913,7 +39009,14 @@ function (_Component) {
   return LandingOne;
 }(react__WEBPACK_IMPORTED_MODULE_7__["Component"]);
 
-/* harmony default export */ __webpack_exports__["default"] = (LandingOne);
+var mapStateToProps = function mapStateToProps(state) {
+  var batmode = state.theme.batmode;
+  return {
+    batmode: batmode
+  };
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_8__["connect"])(mapStateToProps)(LandingOne));
 
 /***/ }),
 
@@ -38937,6 +39040,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 
 
 
@@ -38946,6 +39050,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var _jsxFileName = "/Users/jackieni/dev/personal/jackieni.io/src/components/landingTwo.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement;
+
 
 
 var LandingTwo =
@@ -38968,12 +39073,12 @@ function (_Component) {
           justifyContent: "center",
           alignItems: "center",
           flexDirection: "row",
-          height: "70vh",
+          height: "80vh",
           backgroundColor: "#1890ff"
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 7
+          lineNumber: 8
         },
         __self: this
       }, __jsx("div", {
@@ -38983,13 +39088,13 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 18
         },
         __self: this
       }, __jsx("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 24
         },
         __self: this
       }, __jsx("div", {
@@ -39001,7 +39106,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 25
         },
         __self: this
       }, "Ni-hilism."), __jsx("div", {
@@ -39013,7 +39118,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 35
         },
         __self: this
       }, "The philosophy I follow when I'm not tired (or remember that it exists)."), __jsx("div", {
@@ -39025,7 +39130,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 47
         },
         __self: this
       }, __jsx("div", {
@@ -39035,7 +39140,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 54
+          lineNumber: 55
         },
         __self: this
       }, __jsx(antd_lib_avatar__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -39047,7 +39152,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 56
         },
         __self: this
       }), __jsx("div", {
@@ -39059,7 +39164,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 61
         },
         __self: this
       }, "Food")), __jsx("div", {
@@ -39069,7 +39174,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 71
+          lineNumber: 72
         },
         __self: this
       }, __jsx(antd_lib_avatar__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -39081,7 +39186,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 72
+          lineNumber: 73
         },
         __self: this
       }), __jsx("div", {
@@ -39093,7 +39198,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 77
+          lineNumber: 78
         },
         __self: this
       }, "Humor")), __jsx("div", {
@@ -39103,7 +39208,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 88
+          lineNumber: 89
         },
         __self: this
       }, __jsx(antd_lib_avatar__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -39115,7 +39220,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 89
+          lineNumber: 90
         },
         __self: this
       }), __jsx("div", {
@@ -39127,7 +39232,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 94
+          lineNumber: 95
         },
         __self: this
       }, "Balance"))))));
@@ -39137,7 +39242,14 @@ function (_Component) {
   return LandingTwo;
 }(react__WEBPACK_IMPORTED_MODULE_7__["Component"]);
 
-/* harmony default export */ __webpack_exports__["default"] = (LandingTwo);
+var mapStateToProps = function mapStateToProps(state) {
+  var batmode = state.theme.batmode;
+  return {
+    batmode: batmode
+  };
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_8__["connect"])(mapStateToProps)(LandingTwo));
 
 /***/ }),
 
