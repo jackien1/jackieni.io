@@ -11,7 +11,7 @@ class LandingTwo extends Component {
           justifyContent: "center",
           alignItems: "center",
           flexDirection: "row",
-          height: "80vh",
+          height: "50vh",
           backgroundColor: "#1890ff"
         }}
       >

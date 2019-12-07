@@ -12,7 +12,7 @@ class LandingOne extends Component {
           justifyContent: "center",
           alignItems: "center",
           flexDirection: "row",
-          height: "80vh",
+          height: "50vh",
           paddingBottom: "5vh"
         }}
       >

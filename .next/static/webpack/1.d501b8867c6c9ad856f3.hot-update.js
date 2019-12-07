@@ -44,7 +44,7 @@ function (_Component) {
       return __jsx("model-viewer", {
         src: "../../static/out.glb",
         style: {
-          height: "80vh",
+          height: "50vh",
           width: "100vw"
         },
         "background-color": "black",
@@ -67,4 +67,4 @@ function (_Component) {
 /***/ })
 
 })
-//# sourceMappingURL=1.fc7fe60ec8adbf919720.hot-update.js.map
+//# sourceMappingURL=1.d501b8867c6c9ad856f3.hot-update.js.map

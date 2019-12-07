@@ -2296,7 +2296,7 @@ class LandingOne extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "row",
-        height: "80vh",
+        height: "50vh",
         paddingBottom: "5vh"
       },
       __source: {
@@ -2439,7 +2439,7 @@ class LandingTwo extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "row",
-        height: "80vh",
+        height: "50vh",
         backgroundColor: "#1890ff"
       },
       __source: {

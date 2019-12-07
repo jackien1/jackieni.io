@@ -39517,7 +39517,7 @@ function (_Component) {
           justifyContent: "center",
           alignItems: "center",
           flexDirection: "row",
-          height: "80vh",
+          height: "50vh",
           paddingBottom: "5vh"
         },
         __source: {
@@ -39685,7 +39685,7 @@ function (_Component) {
           justifyContent: "center",
           alignItems: "center",
           flexDirection: "row",
-          height: "80vh",
+          height: "50vh",
           backgroundColor: "#1890ff"
         },
         __source: {

@@ -24,7 +24,7 @@ class Viewer extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
     return __jsx("model-viewer", {
       src: "../../static/out.glb",
       style: {
-        height: "80vh",
+        height: "50vh",
         width: "100vw"
       },
       "background-color": "black",

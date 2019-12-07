@@ -6,7 +6,7 @@ class Viewer extends Component {
     return (
       <model-viewer
         src="../../static/out.glb"
-        style={{ height: "80vh", width: "100vw" }}
+        style={{ height: "50vh", width: "100vw" }}
         background-color="black"
         auto-rotate
         auto-rotate-delay={0}
