@@ -9,6 +9,7 @@ class Viewer extends Component {
         style={{ height: "80vh", width: "100vw" }}
         background-color="black"
         auto-rotate
+        auto-rotate-delay={0}
       ></model-viewer>
     );
   }

@@ -64678,6 +64678,7 @@ function (_Component) {
         },
         "background-color": "black",
         "auto-rotate": true,
+        "auto-rotate-delay": 0,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 7
