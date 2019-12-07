@@ -7,8 +7,8 @@ import styled from "styled-components";
 import times from "lodash/times";
 
 const Photo = styled.img`
-  width: 250px;
-  height: 322.5px;
+  width: 225px;
+  height: 290.25px;
   border-radius: 4px;
   box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.12);
   object-fit: cover;
@@ -35,16 +35,6 @@ class Memes extends Component {
   render() {
     const { Meta } = Card;
 
-    /*      "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/10.jpg",
-          "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/11.jpg",
-          "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/15.jpg",
-          "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/3.png",
-          "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/5.jpg",
-          "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/heart-revised.png",
-          "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/meme2.png",
-          "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/Regular+Meme+1.png",
-        */
-
     return (
       <div>
         <div
@@ -53,7 +43,6 @@ class Memes extends Component {
             backgroundColor: this.props.batmode ? "black" : "white"
           }}
         >
-          <Navigation />
           <div
             style={{
               display: "flex",

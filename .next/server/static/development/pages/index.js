@@ -2151,34 +2151,22 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
         lineNumber: 17
       },
       __self: this
-    }, __jsx(_src_components_navigation__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    }, __jsx(_src_components_landingOne__WEBPACK_IMPORTED_MODULE_3__["default"], {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 23
       },
       __self: this
-    }), __jsx(_src_components_landingOne__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    }), this.props.batmode ? __jsx(DynamicComponentWithNoSSR, {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 24
       },
       __self: this
-    }), this.props.batmode ? __jsx(DynamicComponentWithNoSSR, {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 25
-      },
-      __self: this
     }) : __jsx(_src_components_landingTwo__WEBPACK_IMPORTED_MODULE_4__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 25
-      },
-      __self: this
-    }), __jsx(_src_components_footer__WEBPACK_IMPORTED_MODULE_6__["default"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 26
+        lineNumber: 24
       },
       __self: this
     }));
@@ -2655,12 +2643,13 @@ class Navigation extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
   render() {
     return __jsx("div", {
       style: {
-        width: "100%",
+        width: "100vw",
         height: "5vh",
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-between",
-        padding: "1vw"
+        padding: "1vw",
+        backgroundColor: this.props.batmode ? "black" : "white"
       },
       __source: {
         fileName: _jsxFileName,
@@ -2676,7 +2665,7 @@ class Navigation extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
       onClick: () => next_router__WEBPACK_IMPORTED_MODULE_6___default.a.push("/"),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 21
+        lineNumber: 22
       },
       __self: this
     }, "jackieni.io"), __jsx("div", {
@@ -2687,7 +2676,7 @@ class Navigation extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32
+        lineNumber: 33
       },
       __self: this
     }, __jsx(antd_lib_button__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -2699,7 +2688,7 @@ class Navigation extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
       onClick: () => next_router__WEBPACK_IMPORTED_MODULE_6___default.a.push("/memes"),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 39
+        lineNumber: 40
       },
       __self: this
     }, "Memes"), __jsx(antd_lib_button__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -2711,7 +2700,7 @@ class Navigation extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
       onClick: () => next_router__WEBPACK_IMPORTED_MODULE_6___default.a.push("/projects"),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 50
+        lineNumber: 51
       },
       __self: this
     }, "Projects"), __jsx(antd_lib_button__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -2731,7 +2720,7 @@ class Navigation extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 61
+        lineNumber: 62
       },
       __self: this
     }, __jsx("img", {
@@ -2741,7 +2730,7 @@ class Navigation extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 77
+        lineNumber: 78
       },
       __self: this
     }), __jsx("div", {
@@ -2752,7 +2741,7 @@ class Navigation extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 85
+        lineNumber: 86
       },
       __self: this
     }, "Batmode"))));

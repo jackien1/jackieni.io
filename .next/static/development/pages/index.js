@@ -39330,34 +39330,22 @@ function (_Component) {
           lineNumber: 17
         },
         __self: this
-      }, __jsx(_src_components_navigation__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      }, __jsx(_src_components_landingOne__WEBPACK_IMPORTED_MODULE_8__["default"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 23
         },
         __self: this
-      }), __jsx(_src_components_landingOne__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      }), this.props.batmode ? __jsx(DynamicComponentWithNoSSR, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 24
         },
         __self: this
-      }), this.props.batmode ? __jsx(DynamicComponentWithNoSSR, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 25
-        },
-        __self: this
       }) : __jsx(_src_components_landingTwo__WEBPACK_IMPORTED_MODULE_9__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25
-        },
-        __self: this
-      }), __jsx(_src_components_footer__WEBPACK_IMPORTED_MODULE_11__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 26
+          lineNumber: 24
         },
         __self: this
       }));
@@ -39924,12 +39912,13 @@ function (_Component) {
 
       return __jsx("div", {
         style: {
-          width: "100%",
+          width: "100vw",
           height: "5vh",
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-between",
-          padding: "1vw"
+          padding: "1vw",
+          backgroundColor: this.props.batmode ? "black" : "white"
         },
         __source: {
           fileName: _jsxFileName,
@@ -39947,7 +39936,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 22
         },
         __self: this
       }, "jackieni.io"), __jsx("div", {
@@ -39958,7 +39947,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 33
         },
         __self: this
       }, __jsx(antd_lib_button__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -39972,7 +39961,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 40
         },
         __self: this
       }, "Memes"), __jsx(antd_lib_button__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -39986,7 +39975,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 51
         },
         __self: this
       }, "Projects"), __jsx(antd_lib_button__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -40006,7 +39995,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61
+          lineNumber: 62
         },
         __self: this
       }, __jsx("img", {
@@ -40016,7 +40005,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 77
+          lineNumber: 78
         },
         __self: this
       }), __jsx("div", {
@@ -40027,7 +40016,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 85
+          lineNumber: 86
         },
         __self: this
       }, "Batmode"))));

@@ -20,10 +20,8 @@ class Index extends Component {
           backgroundColor: this.props.batmode ? "black" : "white"
         }}
       >
-        <Navigation />
         <LandingOne />
         {this.props.batmode ? <DynamicComponentWithNoSSR /> : <LandingTwo />}
-        <Footer />
       </div>
     );
   }

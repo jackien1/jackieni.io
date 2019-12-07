@@ -10,12 +10,13 @@ class Navigation extends Component {
     return (
       <div
         style={{
-          width: "100%",
+          width: "100vw",
           height: "5vh",
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-between",
-          padding: "1vw"
+          padding: "1vw",
+          backgroundColor: this.props.batmode ? "black" : "white"
         }}
       >
         <Button

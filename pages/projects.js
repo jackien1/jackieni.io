@@ -15,7 +15,6 @@ class Projects extends Component {
             backgroundColor: this.props.batmode ? "black" : "white"
           }}
         >
-          <Navigation />
           <div
             style={{
               display: "flex",

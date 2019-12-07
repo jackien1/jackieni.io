@@ -93,6 +93,17 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/map.js":
+/*!************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/map.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/map */ "core-js/library/fn/map");
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js":
 /*!**********************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/object/assign.js ***!
@@ -413,6 +424,17 @@ module.exports = _interopRequireWildcard;
 
 /***/ }),
 
+/***/ "./node_modules/antd/lib/button/style/css.js":
+/*!***************************************************!*\
+  !*** ./node_modules/antd/lib/button/style/css.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "./node_modules/next/app.js":
 /*!**********************************!*\
   !*** ./node_modules/next/app.js ***!
@@ -422,6 +444,313 @@ module.exports = _interopRequireWildcard;
 
 module.exports = __webpack_require__(/*! ./dist/pages/_app */ "./node_modules/next/dist/pages/_app.js")
 
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/client/link.js":
+/*!***********************************************!*\
+  !*** ./node_modules/next/dist/client/link.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireWildcard = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireWildcard */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireWildcard.js");
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+exports.__esModule = true;
+exports.default = void 0;
+
+var _map = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/map */ "./node_modules/@babel/runtime-corejs2/core-js/map.js"));
+
+var _url = __webpack_require__(/*! url */ "url");
+
+var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
+
+var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "prop-types"));
+
+var _router = _interopRequireDefault(__webpack_require__(/*! ./router */ "./node_modules/next/dist/client/router.js"));
+
+var _rewriteUrlForExport = __webpack_require__(/*! ../next-server/lib/router/rewrite-url-for-export */ "./node_modules/next/dist/next-server/lib/router/rewrite-url-for-export.js");
+
+var _utils = __webpack_require__(/*! ../next-server/lib/utils */ "./node_modules/next/dist/next-server/lib/utils.js");
+/* global __NEXT_DATA__ */
+
+
+function isLocal(href) {
+  const url = (0, _url.parse)(href, false, true);
+  const origin = (0, _url.parse)((0, _utils.getLocationOrigin)(), false, true);
+  return !url.host || url.protocol === origin.protocol && url.host === origin.host;
+}
+
+function memoizedFormatUrl(formatFunc) {
+  let lastHref = null;
+  let lastAs = null;
+  let lastResult = null;
+  return (href, as) => {
+    if (lastResult && href === lastHref && as === lastAs) {
+      return lastResult;
+    }
+
+    const result = formatFunc(href, as);
+    lastHref = href;
+    lastAs = as;
+    lastResult = result;
+    return result;
+  };
+}
+
+function formatUrl(url) {
+  return url && typeof url === 'object' ? (0, _utils.formatWithValidation)(url) : url;
+}
+
+let observer;
+const listeners = new _map.default();
+const IntersectionObserver = false ? undefined : null;
+
+function getObserver() {
+  // Return shared instance of IntersectionObserver if already created
+  if (observer) {
+    return observer;
+  } // Only create shared IntersectionObserver if supported in browser
+
+
+  if (!IntersectionObserver) {
+    return undefined;
+  }
+
+  return observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!listeners.has(entry.target)) {
+        return;
+      }
+
+      const cb = listeners.get(entry.target);
+
+      if (entry.isIntersecting || entry.intersectionRatio > 0) {
+        observer.unobserve(entry.target);
+        listeners.delete(entry.target);
+        cb();
+      }
+    });
+  }, {
+    rootMargin: '200px'
+  });
+}
+
+const listenToIntersections = (el, cb) => {
+  const observer = getObserver();
+
+  if (!observer) {
+    return () => {};
+  }
+
+  observer.observe(el);
+  listeners.set(el, cb);
+  return () => {
+    try {
+      observer.unobserve(el);
+    } catch (err) {
+      console.error(err);
+    }
+
+    listeners.delete(el);
+  };
+};
+
+class Link extends _react.Component {
+  constructor(props) {
+    super(props);
+    this.p = void 0;
+
+    this.cleanUpListeners = () => {};
+
+    this.formatUrls = memoizedFormatUrl((href, asHref) => {
+      return {
+        href: formatUrl(href),
+        as: asHref ? formatUrl(asHref) : asHref
+      };
+    });
+
+    this.linkClicked = e => {
+      // @ts-ignore target exists on currentTarget
+      const {
+        nodeName,
+        target
+      } = e.currentTarget;
+
+      if (nodeName === 'A' && (target && target !== '_self' || e.metaKey || e.ctrlKey || e.shiftKey || e.nativeEvent && e.nativeEvent.which === 2)) {
+        // ignore click for new tab / new window behavior
+        return;
+      }
+
+      let {
+        href,
+        as
+      } = this.formatUrls(this.props.href, this.props.as);
+
+      if (!isLocal(href)) {
+        // ignore click if it's outside our scope (e.g. https://google.com)
+        return;
+      }
+
+      const {
+        pathname
+      } = window.location;
+      href = (0, _url.resolve)(pathname, href);
+      as = as ? (0, _url.resolve)(pathname, as) : href;
+      e.preventDefault(); //  avoid scroll for urls with anchor refs
+
+      let {
+        scroll
+      } = this.props;
+
+      if (scroll == null) {
+        scroll = as.indexOf('#') < 0;
+      } // replace state instead of push if prop is present
+
+
+      _router.default[this.props.replace ? 'replace' : 'push'](href, as, {
+        shallow: this.props.shallow
+      }).then(success => {
+        if (!success) return;
+
+        if (scroll) {
+          window.scrollTo(0, 0);
+          document.body.focus();
+        }
+      });
+    };
+
+    if (true) {
+      if (props.prefetch) {
+        console.warn('Next.js auto-prefetches automatically based on viewport. The prefetch attribute is no longer needed. More: https://err.sh/zeit/next.js/prefetch-true-deprecated');
+      }
+    }
+
+    this.p = props.prefetch !== false;
+  }
+
+  componentWillUnmount() {
+    this.cleanUpListeners();
+  }
+
+  handleRef(ref) {
+    if (this.p && IntersectionObserver && ref && ref.tagName) {
+      this.cleanUpListeners();
+      this.cleanUpListeners = listenToIntersections(ref, () => {
+        this.prefetch();
+      });
+    }
+  } // The function is memoized so that no extra lifecycles are needed
+  // as per https://reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html
+
+
+  prefetch() {
+    if (!this.p || true) return; // Prefetch the JSON page if asked (only in the client)
+
+    const {
+      pathname
+    } = window.location;
+    const {
+      href: parsedHref
+    } = this.formatUrls(this.props.href, this.props.as);
+    const href = (0, _url.resolve)(pathname, parsedHref);
+
+    _router.default.prefetch(href);
+  }
+
+  render() {
+    let {
+      children
+    } = this.props;
+    const {
+      href,
+      as
+    } = this.formatUrls(this.props.href, this.props.as); // Deprecated. Warning shown by propType check. If the children provided is a string (<Link>example</Link>) we wrap it in an <a> tag
+
+    if (typeof children === 'string') {
+      children = _react.default.createElement("a", null, children);
+    } // This will return the first child, if multiple are provided it will throw an error
+
+
+    const child = _react.Children.only(children);
+
+    const props = {
+      ref: el => {
+        this.handleRef(el);
+
+        if (child && typeof child === 'object' && child.ref) {
+          if (typeof child.ref === 'function') child.ref(el);else if (typeof child.ref === 'object') {
+            child.ref.current = el;
+          }
+        }
+      },
+      onMouseEnter: e => {
+        if (child.props && typeof child.props.onMouseEnter === 'function') {
+          child.props.onMouseEnter(e);
+        }
+
+        this.prefetch();
+      },
+      onClick: e => {
+        if (child.props && typeof child.props.onClick === 'function') {
+          child.props.onClick(e);
+        }
+
+        if (!e.defaultPrevented) {
+          this.linkClicked(e);
+        }
+      } // If child is an <a> tag and doesn't have a href attribute, or if the 'passHref' property is
+      // defined, we specify the current 'href', so that repetition is not needed by the user
+
+    };
+
+    if (this.props.passHref || child.type === 'a' && !('href' in child.props)) {
+      props.href = as || href;
+    } // Add the ending slash to the paths. So, we can serve the
+    // "<page>/index.html" directly.
+
+
+    if (false) {}
+
+    return _react.default.cloneElement(child, props);
+  }
+
+}
+
+Link.propTypes = void 0;
+
+if (true) {
+  const warn = (0, _utils.execOnce)(console.error); // This module gets removed by webpack.IgnorePlugin
+
+  const exact = __webpack_require__(/*! prop-types-exact */ "prop-types-exact");
+
+  Link.propTypes = exact({
+    href: _propTypes.default.oneOfType([_propTypes.default.string, _propTypes.default.object]).isRequired,
+    as: _propTypes.default.oneOfType([_propTypes.default.string, _propTypes.default.object]),
+    prefetch: _propTypes.default.bool,
+    replace: _propTypes.default.bool,
+    shallow: _propTypes.default.bool,
+    passHref: _propTypes.default.bool,
+    scroll: _propTypes.default.bool,
+    children: _propTypes.default.oneOfType([_propTypes.default.element, (props, propName) => {
+      const value = props[propName];
+
+      if (typeof value === 'string') {
+        warn("Warning: You're using a string directly inside <Link>. This usage has been deprecated. Please add an <a> tag as child of <Link>");
+      }
+
+      return null;
+    }]).isRequired
+  });
+}
+
+var _default = Link;
+exports.default = _default;
 
 /***/ }),
 
@@ -1787,6 +2116,18 @@ function createUrl(router) {
 
 /***/ }),
 
+/***/ "./node_modules/next/link.js":
+/*!***********************************!*\
+  !*** ./node_modules/next/link.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/next/dist/client/link.js")
+
+
+/***/ }),
+
 /***/ "./node_modules/next/node_modules/react-is/cjs/react-is.development.js":
 /*!*****************************************************************************!*\
   !*** ./node_modules/next/node_modules/react-is/cjs/react-is.development.js ***!
@@ -2062,9 +2403,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-redux */ "react-redux");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _src_redux_store__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../src/redux/store */ "./src/redux/store.js");
+/* harmony import */ var _src_components_footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../src/components/footer */ "./src/components/footer.js");
+/* harmony import */ var _src_components_navigation__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../src/components/navigation */ "./src/components/navigation.js");
 
 var _jsxFileName = "/Users/jackieni/dev/personal/jackieni.io/pages/_app.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+
 
 
 
@@ -2080,7 +2425,7 @@ class Layout extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
       className: "layout",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 10
+        lineNumber: 12
       },
       __self: this
     }, children);
@@ -2099,25 +2444,295 @@ class Layout extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
       store: store,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 19
+        lineNumber: 21
       },
       __self: this
-    }, __jsx(Layout, {
+    }, __jsx(_src_components_navigation__WEBPACK_IMPORTED_MODULE_7__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 20
+        lineNumber: 22
+      },
+      __self: this
+    }), __jsx(Layout, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 23
       },
       __self: this
     }, __jsx(Component, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 21
+        lineNumber: 24
       },
       __self: this
-    }))));
+    }))), __jsx(_src_components_footer__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26
+      },
+      __self: this
+    }));
   }
 
 }));
+
+/***/ }),
+
+/***/ "./src/components/footer.js":
+/*!**********************************!*\
+  !*** ./src/components/footer.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/jackieni/dev/personal/jackieni.io/src/components/footer.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+class Footer extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  render() {
+    return __jsx("div", {
+      style: {
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: "row",
+        backgroundColor: this.props.batmode ? "black" : "white",
+        height: "10vh"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 8
+      },
+      __self: this
+    }, __jsx("div", {
+      style: {
+        display: "flex",
+        fontSize: "1vw",
+        fontWeight: "bold",
+        color: this.props.batmode ? "white" : "black"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18
+      },
+      __self: this
+    }, "Not Real Copyright \xA9 2019 Jackie Ni"));
+  }
+
+}
+
+const mapStateToProps = state => {
+  const {
+    batmode
+  } = state.theme;
+  return {
+    batmode
+  };
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["connect"])(mapStateToProps)(Footer));
+
+/***/ }),
+
+/***/ "./src/components/navigation.js":
+/*!**************************************!*\
+  !*** ./src/components/navigation.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var antd_lib_button_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! antd/lib/button/style/css */ "./node_modules/antd/lib/button/style/css.js");
+/* harmony import */ var antd_lib_button_style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(antd_lib_button_style_css__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var antd_lib_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! antd/lib/button */ "antd/lib/button");
+/* harmony import */ var antd_lib_button__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd_lib_button__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _redux_actions__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../redux/actions */ "./src/redux/actions/index.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next/router */ "next/router");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_6__);
+
+
+var _jsxFileName = "/Users/jackieni/dev/personal/jackieni.io/src/components/navigation.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
+
+
+
+
+
+
+class Navigation extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
+  render() {
+    return __jsx("div", {
+      style: {
+        width: "100vw",
+        height: "5vh",
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "space-between",
+        padding: "1vw",
+        backgroundColor: this.props.batmode ? "black" : "white"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 11
+      },
+      __self: this
+    }, __jsx(antd_lib_button__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      type: "link",
+      style: {
+        fontSize: "1vw",
+        color: this.props.batmode ? "white" : "black"
+      },
+      onClick: () => next_router__WEBPACK_IMPORTED_MODULE_6___default.a.push("/"),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 22
+      },
+      __self: this
+    }, "jackieni.io"), __jsx("div", {
+      style: {
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "space-evenly"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 33
+      },
+      __self: this
+    }, __jsx(antd_lib_button__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      type: "link",
+      style: {
+        fontSize: "1vw",
+        color: this.props.batmode ? "white" : "black"
+      },
+      onClick: () => next_router__WEBPACK_IMPORTED_MODULE_6___default.a.push("/memes"),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 40
+      },
+      __self: this
+    }, "Memes"), __jsx(antd_lib_button__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      type: "link",
+      style: {
+        fontSize: "1vw",
+        color: this.props.batmode ? "white" : "black"
+      },
+      onClick: () => next_router__WEBPACK_IMPORTED_MODULE_6___default.a.push("/projects"),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 51
+      },
+      __self: this
+    }, "Projects"), __jsx(antd_lib_button__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      style: {
+        backgroundColor: this.props.batmode ? "white" : "black",
+        color: "white",
+        display: "flex",
+        alignItems: "center",
+        borderColor: "transparent"
+      },
+      onClick: () => {
+        if (!this.props.batmode) {
+          this.props.changeBatmode(true);
+        } else {
+          this.props.changeBatmode(false);
+        }
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 62
+      },
+      __self: this
+    }, __jsx("img", {
+      src: `/static/${this.props.batmode ? "batarang" : "whiteBatarang"}.png`,
+      style: {
+        width: "1.6vw"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 78
+      },
+      __self: this
+    }), __jsx("div", {
+      style: {
+        fontSize: "1vw",
+        marginLeft: "0.4vw",
+        color: this.props.batmode ? "black" : "white"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 86
+      },
+      __self: this
+    }, "Batmode"))));
+  }
+
+}
+
+const mapStateToProps = state => {
+  const {
+    batmode
+  } = state.theme;
+  return {
+    batmode
+  };
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_4__["connect"])(mapStateToProps, {
+  changeBatmode: _redux_actions__WEBPACK_IMPORTED_MODULE_5__["changeBatmode"]
+})(Navigation));
+
+/***/ }),
+
+/***/ "./src/redux/actions/index.js":
+/*!************************************!*\
+  !*** ./src/redux/actions/index.js ***!
+  \************************************/
+/*! exports provided: changeBatmode */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _theme_actions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./theme_actions */ "./src/redux/actions/theme_actions.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "changeBatmode", function() { return _theme_actions__WEBPACK_IMPORTED_MODULE_0__["changeBatmode"]; });
+
+
+
+/***/ }),
+
+/***/ "./src/redux/actions/theme_actions.js":
+/*!********************************************!*\
+  !*** ./src/redux/actions/theme_actions.js ***!
+  \********************************************/
+/*! exports provided: changeBatmode */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "changeBatmode", function() { return changeBatmode; });
+/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../types */ "./src/redux/types.js");
+
+const changeBatmode = status => {
+  return {
+    type: _types__WEBPACK_IMPORTED_MODULE_0__["CHANGE_BATMODE"],
+    payload: status
+  };
+};
 
 /***/ }),
 
@@ -2221,6 +2836,28 @@ module.exports = __webpack_require__(/*! private-next-pages/_app.js */"./pages/_
 
 /***/ }),
 
+/***/ "antd/lib/button":
+/*!**********************************!*\
+  !*** external "antd/lib/button" ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("antd/lib/button");
+
+/***/ }),
+
+/***/ "core-js/library/fn/map":
+/*!*****************************************!*\
+  !*** external "core-js/library/fn/map" ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/map");
+
+/***/ }),
+
 /***/ "core-js/library/fn/object/assign":
 /*!***************************************************!*\
   !*** external "core-js/library/fn/object/assign" ***!
@@ -2309,6 +2946,17 @@ module.exports = require("next-redux-wrapper");
 
 /***/ }),
 
+/***/ "next/router":
+/*!******************************!*\
+  !*** external "next/router" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/router");
+
+/***/ }),
+
 /***/ "prop-types":
 /*!*****************************!*\
   !*** external "prop-types" ***!
@@ -2317,6 +2965,17 @@ module.exports = require("next-redux-wrapper");
 /***/ (function(module, exports) {
 
 module.exports = require("prop-types");
+
+/***/ }),
+
+/***/ "prop-types-exact":
+/*!***********************************!*\
+  !*** external "prop-types-exact" ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("prop-types-exact");
 
 /***/ }),
 
