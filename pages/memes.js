@@ -2,10 +2,48 @@ import React, { Component } from "react";
 import { Icon, Card, Tag, Timeline } from "antd";
 import { connect } from "react-redux";
 import Navigation from "../src/components/navigation";
+import Marquee from "react-marquee-slider";
+import styled from "styled-components";
+import times from "lodash/times";
 
 class Memes extends Component {
   render() {
     const { Meta } = Card;
+
+    const Photo = styled.img`
+      width: 200px;
+      height: 258px;
+      border-radius: 4px;
+      box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.12);
+      object-fit: cover;
+      object-position: top;
+    `;
+
+    const photos = [
+      "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/Boat.png",
+      "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/EstateMeme.png",
+      "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/MemeDos.png",
+      "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/MemeHeart.png",
+      "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/MemeMind.png"
+    ];
+
+    const photosAlt = [
+      "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/MemeNueve.png",
+      "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/MemeSiete.png",
+      "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/MemeUno.png",
+      "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/UncleMeme.png",
+      "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/moneymeme-revised.png"
+    ];
+
+    /*      "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/10.jpg",
+          "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/11.jpg",
+          "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/15.jpg",
+          "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/3.png",
+          "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/5.jpg",
+          "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/heart-revised.png",
+          "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/meme2.png",
+          "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/Regular+Meme+1.png",
+        */
 
     return (
       <div>
@@ -19,154 +57,60 @@ class Memes extends Component {
           <div
             style={{
               display: "flex",
-              justifyContent: "space-evenly",
+              justifyContent: "center",
               alignItems: "center",
               flexDirection: "row",
-              height: "95vh",
-              paddingBottom: "5vh"
+              height: "80vh",
+              width: "100vw"
             }}
           >
-            <div
-              style={{
-                fontWeight: "bold",
-                fontSize: "4vw",
-                color: this.props.batmode ? "white" : "black"
-              }}
-            >
-              Featured Works
-            </div>
-            <div>
-              <div style={{ display: "flex", flexDirection: "row" }}>
-                <Card
-                  style={{
-                    width: "18vw",
-                    marginRight: "1vw",
-                    padding: "1vw",
-                    backgroundColor: this.props.batmode ? "black" : "white"
-                  }}
-                  cover={<img alt="example" src="/static/EstateMeme.png" />}
-                >
-                  <div
-                    style={{
-                      fontSize: "1.2vw",
-                      fontWeight: "bold",
-                      color: this.props.batmode ? "white" : "black"
-                    }}
-                  >
-                    Estate Meme
-                  </div>
-                  <Tag style={{ fontSize: "0.8vw" }} color="magenta">
-                    Student Council Election
-                  </Tag>
-                </Card>
-                <Card
-                  style={{
-                    width: "18vw",
-                    marginRight: "1vw",
-                    padding: "1vw",
-                    backgroundColor: this.props.batmode ? "black" : "white"
-                  }}
-                  cover={<img alt="example" src="/static/Boat.png" />}
-                >
-                  <div
-                    style={{
-                      fontSize: "1.2vw",
-                      fontWeight: "bold",
-                      color: this.props.batmode ? "white" : "black"
-                    }}
-                  >
-                    Boat Meme
-                  </div>
-                  <Tag style={{ fontSize: "0.8vw" }} color="magenta">
-                    Student Council Election
-                  </Tag>
-                </Card>
-                <Card
-                  style={{
-                    width: "18vw",
-                    padding: "1vw",
-                    backgroundColor: this.props.batmode ? "black" : "white"
-                  }}
-                  cover={<img alt="example" src="/static/1percent.png" />}
-                >
-                  <div
-                    style={{
-                      fontSize: "1.2vw",
-                      fontWeight: "bold",
-                      color: this.props.batmode ? "white" : "black"
-                    }}
-                  >
-                    Bernie Meme
-                  </div>
-                  <Tag style={{ fontSize: "0.8vw" }} color="blue">
-                    Pep Rally
-                  </Tag>
-                </Card>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          style={{
-            height: "100vh",
-            backgroundColor: this.props.batmode ? "black" : "white",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            flexDirection: "column"
-          }}
-        >
-          <div
-            style={{
-              fontWeight: "bold",
-              fontSize: "4vw",
-              color: this.props.batmode ? "white" : "black"
-            }}
-          >
-            Meme Club
-          </div>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-              width: "100vw",
-              justifyContent: "space-evenly"
-            }}
-          >
-            <img style={{ width: "20vw" }} src={"/static/image1.png"} />
-            <Card
-              style={{
-                width: "30vw",
-                backgroundColor: this.props.batmode ? "black" : "white"
-              }}
-            >
+            <div style={{ display: "column" }}>
               <div
                 style={{
                   fontWeight: "bold",
-                  fontSize: "1.8vw",
-                  color: this.props.batmode ? "white" : "black"
+                  fontSize: "4vw",
+                  color: this.props.batmode ? "white" : "black",
+                  textAlign: "center"
                 }}
               >
-                What is it?
+                Gallery
               </div>
-              <div
-                style={{
-                  fontSize: "1vw",
-                  color: this.props.batmode ? "white" : "black"
-                }}
-              >
-                I started Meme Club along with some of my good friends at my
-                high school because I saw the need for humor on campus and the
-                potential of memes as the next medium of communication.
-                Officially, we are a society of woke individuals who analyze
-                contemporary meme trends and encourage the spread of meme
-                culture. So far, we have performed at town meetings with skits
-                such as the Columbus Diss Track, led discussions about
-                controversial topics (Harambe), and presented the evolution of
-                memes at Sage Hill's Annual Multicultural Symposium.
+
+              <div style={{ height: "2vw" }} />
+
+              <div style={{ width: "80vw" }}>
+                <Marquee velocity={25}>
+                  {times(5, Number).map(id => {
+                    return (
+                      <Photo
+                        src={photos[id]}
+                        style={{
+                          marginLeft: "80px"
+                        }}
+                      />
+                    );
+                  })}
+                </Marquee>
               </div>
-            </Card>
+
+              <div style={{ height: "4vw" }} />
+
+              <div style={{ width: "80vw" }}>
+                <Marquee velocity={30}>
+                  {times(5, Number).map(id => {
+                    return (
+                      <Photo
+                        src={photosAlt[id]}
+                        style={{
+                          marginLeft: "7px",
+                          marginRight: "80px"
+                        }}
+                      />
+                    );
+                  })}
+                </Marquee>
+              </div>
+            </div>
           </div>
         </div>
       </div>
