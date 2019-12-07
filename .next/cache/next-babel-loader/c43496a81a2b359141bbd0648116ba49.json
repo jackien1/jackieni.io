@@ -1,1 +1,0 @@
-{"ast":null,"code":"import * as types from \"../types\";\nexport var changeBatmode = function changeBatmode(status) {\n  return {\n    type: types.CHANGE_BATMODE,\n    payload: status\n  };\n};","map":null,"metadata":{},"sourceType":"module"}

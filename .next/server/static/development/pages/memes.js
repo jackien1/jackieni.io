@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2093,18 +2093,18 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 
 
+const Photo = styled_components__WEBPACK_IMPORTED_MODULE_6___default.a.img.withConfig({
+  displayName: "memes__Photo",
+  componentId: "sc-117bjjp-0"
+})(["width:250px;height:322.5px;border-radius:4px;box-shadow:0 7px 20px 0 rgba(0,0,0,0.12);object-fit:cover;object-position:top;"]);
+const photos = ["https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/One.jpg", "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/Two.jpg", "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/Three.jpg", "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/Four.jpg", "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/Five.jpg"];
+const photosAlt = ["https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/Six.jpg", "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/Seven.jpg", "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/Eight.jpg", "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/Nine.jpg", "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/Ten.jpg"];
 
 class Memes extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
   render() {
     const {
       Meta
     } = antd_lib_card__WEBPACK_IMPORTED_MODULE_1___default.a;
-    const Photo = styled_components__WEBPACK_IMPORTED_MODULE_6___default.a.img.withConfig({
-      displayName: "memes__Photo",
-      componentId: "sc-117bjjp-0"
-    })(["width:200px;height:258px;border-radius:4px;box-shadow:0 7px 20px 0 rgba(0,0,0,0.12);object-fit:cover;object-position:top;"]);
-    const photos = ["https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/Boat.png", "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/EstateMeme.png", "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/MemeDos.png", "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/MemeHeart.png", "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/MemeMind.png"];
-    const photosAlt = ["https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/MemeNueve.png", "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/MemeSiete.png", "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/MemeUno.png", "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/UncleMeme.png", "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/moneymeme-revised.png"];
     /*      "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/10.jpg",
           "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/11.jpg",
           "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/15.jpg",
@@ -2143,7 +2143,7 @@ class Memes extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "row",
-        height: "80vh",
+        height: "95vh",
         width: "100vw"
       },
       __source: {
@@ -2165,7 +2165,8 @@ class Memes extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
         fontWeight: "bold",
         fontSize: "4vw",
         color: this.props.batmode ? "white" : "black",
-        textAlign: "center"
+        textAlign: "center",
+        marginBottom: "2vw"
       },
       __source: {
         fileName: _jsxFileName,
@@ -2174,27 +2175,18 @@ class Memes extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
       __self: this
     }, "Gallery"), __jsx("div", {
       style: {
-        height: "2vw"
+        width: "90vw"
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 79
-      },
-      __self: this
-    }), __jsx("div", {
-      style: {
-        width: "80vw"
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 81
+        lineNumber: 80
       },
       __self: this
     }, __jsx(react_marquee_slider__WEBPACK_IMPORTED_MODULE_5___default.a, {
       velocity: 25,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 82
+        lineNumber: 81
       },
       __self: this
     }, lodash_times__WEBPACK_IMPORTED_MODULE_7___default()(5, Number).map(id => {
@@ -2205,33 +2197,33 @@ class Memes extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 85
+          lineNumber: 84
         },
         __self: this
       });
     }))), __jsx("div", {
       style: {
-        height: "4vw"
+        height: "2vw"
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 96
+        lineNumber: 95
       },
       __self: this
     }), __jsx("div", {
       style: {
-        width: "80vw"
+        width: "90vw"
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 98
+        lineNumber: 97
       },
       __self: this
     }, __jsx(react_marquee_slider__WEBPACK_IMPORTED_MODULE_5___default.a, {
-      velocity: 30,
+      velocity: 25,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 99
+        lineNumber: 98
       },
       __self: this
     }, lodash_times__WEBPACK_IMPORTED_MODULE_7___default()(5, Number).map(id => {
@@ -2243,7 +2235,7 @@ class Memes extends react__WEBPACK_IMPORTED_MODULE_2__["Component"] {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 102
+          lineNumber: 101
         },
         __self: this
       });
@@ -2472,7 +2464,7 @@ const CHANGE_BATMODE = "change_batmode";
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/memes.js ***!
   \******************************/

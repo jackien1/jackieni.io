@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Icon } from "antd";
+import { Icon, Button } from "antd";
 import { connect } from "react-redux";
 import Navigation from "../src/components/navigation";
 import LandingOne from "../src/components/landingOne";

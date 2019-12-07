@@ -6,34 +6,34 @@ import Marquee from "react-marquee-slider";
 import styled from "styled-components";
 import times from "lodash/times";
 
+const Photo = styled.img`
+  width: 250px;
+  height: 322.5px;
+  border-radius: 4px;
+  box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.12);
+  object-fit: cover;
+  object-position: top;
+`;
+
+const photos = [
+  "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/One.jpg",
+  "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/Two.jpg",
+  "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/Three.jpg",
+  "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/Four.jpg",
+  "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/Five.jpg"
+];
+
+const photosAlt = [
+  "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/Six.jpg",
+  "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/Seven.jpg",
+  "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/Eight.jpg",
+  "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/Nine.jpg",
+  "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/Ten.jpg"
+];
+
 class Memes extends Component {
   render() {
     const { Meta } = Card;
-
-    const Photo = styled.img`
-      width: 200px;
-      height: 258px;
-      border-radius: 4px;
-      box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.12);
-      object-fit: cover;
-      object-position: top;
-    `;
-
-    const photos = [
-      "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/Boat.png",
-      "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/EstateMeme.png",
-      "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/MemeDos.png",
-      "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/MemeHeart.png",
-      "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/MemeMind.png"
-    ];
-
-    const photosAlt = [
-      "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/MemeNueve.png",
-      "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/MemeSiete.png",
-      "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/MemeUno.png",
-      "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/UncleMeme.png",
-      "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/moneymeme-revised.png"
-    ];
 
     /*      "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/10.jpg",
           "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/11.jpg",
@@ -60,7 +60,7 @@ class Memes extends Component {
               justifyContent: "center",
               alignItems: "center",
               flexDirection: "row",
-              height: "80vh",
+              height: "95vh",
               width: "100vw"
             }}
           >
@@ -70,15 +70,14 @@ class Memes extends Component {
                   fontWeight: "bold",
                   fontSize: "4vw",
                   color: this.props.batmode ? "white" : "black",
-                  textAlign: "center"
+                  textAlign: "center",
+                  marginBottom: "2vw"
                 }}
               >
                 Gallery
               </div>
 
-              <div style={{ height: "2vw" }} />
-
-              <div style={{ width: "80vw" }}>
+              <div style={{ width: "90vw" }}>
                 <Marquee velocity={25}>
                   {times(5, Number).map(id => {
                     return (
@@ -93,10 +92,10 @@ class Memes extends Component {
                 </Marquee>
               </div>
 
-              <div style={{ height: "4vw" }} />
+              <div style={{ height: "2vw" }} />
 
-              <div style={{ width: "80vw" }}>
-                <Marquee velocity={30}>
+              <div style={{ width: "90vw" }}>
+                <Marquee velocity={25}>
                   {times(5, Number).map(id => {
                     return (
                       <Photo
