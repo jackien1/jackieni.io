@@ -4,6 +4,11 @@ import { connect } from "react-redux";
 import Navigation from "../src/components/navigation";
 import LandingOne from "../src/components/landingOne";
 import LandingTwo from "../src/components/landingTwo";
+import dynamic from "next/dynamic";
+const DynamicComponentWithNoSSR = dynamic(
+  () => import("../src/components/viewer"),
+  { ssr: false }
+);
 import Footer from "../src/components/footer";
 
 class Index extends Component {
@@ -17,7 +22,7 @@ class Index extends Component {
       >
         <Navigation />
         <LandingOne />
-        <LandingTwo />
+        {this.props.batmode ? <DynamicComponentWithNoSSR /> : <LandingTwo />}
         <Footer />
       </div>
     );

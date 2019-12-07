@@ -3,6 +3,12 @@ module.exports =
 /******/ 	// The module cache
 /******/ 	var installedModules = require('../../../ssr-module-cache.js');
 /******/
+/******/ 	// object to store loaded chunks
+/******/ 	// "0" means "already loaded"
+/******/ 	var installedChunks = {
+/******/ 		"static/development/pages/index.js": 0
+/******/ 	};
+/******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 /******/
@@ -33,6 +39,26 @@ module.exports =
 /******/ 		return module.exports;
 /******/ 	}
 /******/
+/******/ 	// This file contains only the entry chunk.
+/******/ 	// The chunk loading function for additional chunks
+/******/ 	__webpack_require__.e = function requireEnsure(chunkId) {
+/******/ 		var promises = [];
+/******/
+/******/
+/******/ 		// require() chunk loading for javascript
+/******/
+/******/ 		// "0" is the signal for "already loaded"
+/******/ 		if(installedChunks[chunkId] !== 0) {
+/******/ 			var chunk = require("../../../" + ({}[chunkId]||chunkId) + ".js");
+/******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
+/******/ 			for(var moduleId in moreModules) {
+/******/ 				modules[moduleId] = moreModules[moduleId];
+/******/ 			}
+/******/ 			for(var i = 0; i < chunkIds.length; i++)
+/******/ 				installedChunks[chunkIds[i]] = 0;
+/******/ 		}
+/******/ 		return Promise.all(promises);
+/******/ 	};
 /******/
 /******/ 	// expose the modules object (__webpack_modules__)
 /******/ 	__webpack_require__.m = modules;
@@ -86,9 +112,16 @@ module.exports =
 /******/ 	// __webpack_public_path__
 /******/ 	__webpack_require__.p = "";
 /******/
+/******/ 	// uncaught error handler for webpack runtime
+/******/ 	__webpack_require__.oe = function(err) {
+/******/ 		process.nextTick(function() {
+/******/ 			throw err; // catch this error by using import().catch()
+/******/ 		});
+/******/ 	};
+/******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2086,7 +2119,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _src_components_navigation__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../src/components/navigation */ "./src/components/navigation.js");
 /* harmony import */ var _src_components_landingOne__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../src/components/landingOne */ "./src/components/landingOne.js");
 /* harmony import */ var _src_components_landingTwo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../src/components/landingTwo */ "./src/components/landingTwo.js");
-/* harmony import */ var _src_components_footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../src/components/footer */ "./src/components/footer.js");
+/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/dynamic */ "next/dynamic");
+/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_dynamic__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _src_components_footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../src/components/footer */ "./src/components/footer.js");
 var _jsxFileName = "/Users/jackieni/dev/personal/jackieni.io/pages/index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -2094,6 +2129,14 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+
+const DynamicComponentWithNoSSR = next_dynamic__WEBPACK_IMPORTED_MODULE_5___default()(() => __webpack_require__.e(/*! import() */ 0).then(__webpack_require__.bind(null, /*! ../src/components/viewer */ "./src/components/viewer.js")), {
+  ssr: false,
+  loadableGenerated: {
+    webpack: () => [/*require.resolve*/(/*! ../src/components/viewer */ "./src/components/viewer.js")],
+    modules: ["../src/components/viewer"]
+  }
+});
 
 
 class Index extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
@@ -2105,31 +2148,37 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 12
+        lineNumber: 17
       },
       __self: this
     }, __jsx(_src_components_navigation__WEBPACK_IMPORTED_MODULE_2__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 18
+        lineNumber: 23
       },
       __self: this
     }), __jsx(_src_components_landingOne__WEBPACK_IMPORTED_MODULE_3__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 19
+        lineNumber: 24
       },
       __self: this
-    }), __jsx(_src_components_landingTwo__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    }), this.props.batmode ? __jsx(DynamicComponentWithNoSSR, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 20
+        lineNumber: 25
       },
       __self: this
-    }), __jsx(_src_components_footer__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    }) : __jsx(_src_components_landingTwo__WEBPACK_IMPORTED_MODULE_4__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 21
+        lineNumber: 25
+      },
+      __self: this
+    }), __jsx(_src_components_footer__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26
       },
       __self: this
     }));
@@ -2777,7 +2826,7 @@ const CHANGE_BATMODE = "change_batmode";
 
 /***/ }),
 
-/***/ 5:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -2786,6 +2835,17 @@ const CHANGE_BATMODE = "change_batmode";
 
 module.exports = __webpack_require__(/*! /Users/jackieni/dev/personal/jackieni.io/pages/index.js */"./pages/index.js");
 
+
+/***/ }),
+
+/***/ "@google/model-viewer":
+/*!***************************************!*\
+  !*** external "@google/model-viewer" ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@google/model-viewer");
 
 /***/ }),
 
@@ -2896,6 +2956,17 @@ module.exports = require("core-js/library/fn/object/keys");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/promise");
+
+/***/ }),
+
+/***/ "next/dynamic":
+/*!*******************************!*\
+  !*** external "next/dynamic" ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/dynamic");
 
 /***/ }),
 
