@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button, Icon, Tag, Card } from "antd";
+import { Button, Icon, Tag, Card, Divider } from "antd";
 import { connect } from "react-redux";
 import Navigation from "../src/components/navigation";
 
@@ -12,30 +12,37 @@ class Projects extends Component {
         <div
           style={{
             display: "flex",
-            justifyContent: "center",
             alignItems: "center",
             flexDirection: "column",
-            height: "50vh",
-            paddingBottom: "5vh",
             backgroundColor: this.props.batmode ? "black" : "white"
           }}
         >
+          <div
+            style={{
+              marginTop: "4vw",
+              fontWeight: "bold",
+              fontSize: "2vw",
+              color: this.props.batmode ? "white" : "black"
+            }}
+          >
+            Masterpieces
+          </div>
           <div
             style={{
               display: "flex",
               flexDirection: "row",
               alignItems: "center",
               justifyContent: "space-around",
-              width: "80vw"
+              width: "60vw"
             }}
           >
-            <div style={{ width: "30vw" }}>
-              <Tag style={{ fontSize: "0.8vw" }} color="magenta">
-                Featured
+            <div style={{ width: "25vw" }}>
+              <Tag style={{ fontSize: "0.7vw" }} color="magenta">
+                Software
               </Tag>
               <div
                 style={{
-                  fontSize: "1.2vw",
+                  fontSize: "1.1vw",
                   fontWeight: "bold",
                   color: this.props.batmode ? "white" : "black"
                 }}
@@ -49,40 +56,54 @@ class Projects extends Component {
               >
                 <div
                   style={{
-                    fontSize: "1vw",
+                    fontSize: "0.9vw",
                     color: this.props.batmode ? "white" : "black"
                   }}
                 >
-                  I started working on this project during a hackathon in the
-                  summer of 2018. It is a sports fantasy basketball game built
-                  on the blockchain where users can trade, play, and develop
-                  animated characters (non-fungible tokens). Currently, I
-                  function as the CTO and continue to work on the back-end of
-                  this application.
+                  A decentralized fantasy basketball game where you can
+                  buy/sell/trade cartoon animals and play then in
+                  tournament-style leagues.
                 </div>
 
                 <div style={{ marginTop: "1vw" }}>
-                  <Tag style={{ fontSize: "0.8vw" }} color="green">
+                  <Tag style={{ fontSize: "0.7vw" }} color="green">
                     Node.js
                   </Tag>
-                  <Tag style={{ fontSize: "0.8vw" }} color="orange">
+                  <Tag style={{ fontSize: "0.7vw" }} color="orange">
                     Socket.io
                   </Tag>
-                  <Tag style={{ fontSize: "0.8vw" }} color="blue">
+                  <Tag style={{ fontSize: "0.7vw" }} color="blue">
                     Next.js
                   </Tag>
-                  <Tag style={{ fontSize: "0.8vw" }} color="red">
-                    Infura
-                  </Tag>
-                  <Tag style={{ fontSize: "0.8vw" }} color="cyan">
+                  <Tag style={{ fontSize: "0.7vw" }} color="cyan">
                     Loom
+                  </Tag>
+                  <Tag style={{ fontSize: "0.7vw" }} color="purple">
+                    MongoDB
+                  </Tag>
+                  <div style={{ marginTop: "0.5vw" }}>
+                    <Tag style={{ fontSize: "0.7vw" }} color="volcano">
+                      Firebase
+                    </Tag>
+                  </div>
+                </div>
+
+                <div style={{ marginTop: "1vw" }}>
+                  <Tag color="#f50">
+                    AngelHack 2018 LA Hackathon Grand Prize Winner
+                  </Tag>
+                  <Tag color="#2db7f5">
+                    AngelHack HACKcelerator 2018 Finalist
+                  </Tag>
+                  <Tag color="#87d068">
+                    500 Startups Award (at Global Demo Day 2018)
                   </Tag>
                 </div>
 
                 <div style={{ display: "flex", justifyContent: "flex-end" }}>
                   <Button
                     type="link"
-                    style={{ fontSize: "0.8vw" }}
+                    style={{ fontSize: "0.7vw" }}
                     onClick={() => window.open("https://dimedrop.io", "_blank")}
                   >
                     Visit
@@ -90,261 +111,323 @@ class Projects extends Component {
                 </div>
               </Card>
             </div>
-
-            <img style={{ width: "50%" }} src={"/static/dimedrop.png"} />
+            <img
+              width="45%"
+              src={
+                "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/dime.png"
+              }
+            />
           </div>
-        </div>
-
-        <div
-          style={{
-            backgroundColor: this.props.batmode ? "black" : "white",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            flexDirection: "column"
-          }}
-        >
-          <div
-            style={{
-              fontWeight: "bold",
-              fontSize: "4vw",
-              color: this.props.batmode ? "white" : "black"
-            }}
-          >
-            Other Projects
-          </div>
+          <Divider />
           <div
             style={{
               display: "flex",
               flexDirection: "row",
-              width: "100vw",
-              justifyContent: "space-evenly",
-              marginTop: "2vw"
+              alignItems: "center",
+              justifyContent: "space-around",
+              width: "60vw"
             }}
           >
-            <Card
-              style={{
-                width: "20vw",
-                padding: "1vw",
-                backgroundColor: this.props.batmode ? "black" : "white"
-              }}
-              cover={<img src="/static/aceingautism.png" />}
-            >
-              <div
-                style={{
-                  fontSize: "1vw",
-                  fontWeight: "bold",
-                  color: this.props.batmode ? "white" : "black"
-                }}
-              >
-                Sage ACEing Autism
-              </div>
-              <div
-                style={{
-                  fontSize: "0.8vw",
-                  color: this.props.batmode ? "white" : "black"
-                }}
-              >
-                A website that showcases the club and allows participants to
-                sign up.
-              </div>
-            </Card>
-            <Card
-              style={{
-                width: "20vw",
-                padding: "1vw",
-                backgroundColor: this.props.batmode ? "black" : "white"
-              }}
-              cover={<img src="/static/saddlepoint.jpeg" />}
-            >
-              <div
-                style={{
-                  fontSize: "1vw",
-                  fontWeight: "bold",
-                  color: this.props.batmode ? "white" : "black"
-                }}
-              >
-                SaddlePoint
-              </div>
-              <div
-                style={{
-                  fontSize: "0.8vw",
-                  color: this.props.batmode ? "white" : "black"
-                }}
-              >
-                A online platform that organizes clubs and allows members to
-                communicate with and donate to all of their favorite activities.
-              </div>
-            </Card>
-            <Card
-              style={{
-                width: "20vw",
-                padding: "1vw",
-                backgroundColor: this.props.batmode ? "black" : "white"
-              }}
-              cover={<img src="/static/fairlegal.jpeg" />}
-            >
-              <div
-                style={{
-                  fontSize: "1vw",
-                  fontWeight: "bold",
-                  color: this.props.batmode ? "white" : "black"
-                }}
-              >
-                FairLegal
-              </div>
-              <div
-                style={{
-                  fontSize: "0.8vw",
-                  color: this.props.batmode ? "white" : "black"
-                }}
-              >
-                A decentralized application that facilitates communications
-                between lawyers and clients.
-              </div>
-            </Card>
-            <Card
-              style={{
-                width: "20vw",
-                padding: "1vw",
-                backgroundColor: this.props.batmode ? "black" : "white"
-              }}
-              cover={<img src="/static/flaremag.png" />}
-            >
-              <div
-                style={{
-                  fontSize: "1vw",
-                  fontWeight: "bold",
-                  color: this.props.batmode ? "white" : "black"
-                }}
-              >
-                Sage Flare Magazine
-              </div>
-              <div
-                style={{
-                  fontSize: "0.8vw",
-                  color: this.props.batmode ? "white" : "black"
-                }}
-              >
-                A website that displays articles written by members of the club.
-              </div>
-            </Card>
-          </div>
+            <img
+              width="40%"
+              src={
+                "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/fairlegal.png"
+              }
+            />
 
+            <div style={{ width: "25vw" }}>
+              <Tag style={{ fontSize: "0.7vw" }} color="magenta">
+                Software
+              </Tag>
+              <div
+                style={{
+                  fontSize: "1.1vw",
+                  fontWeight: "bold",
+                  color: this.props.batmode ? "white" : "black"
+                }}
+              >
+                FairLegal ⚖️
+              </div>
+              <Card
+                style={{
+                  backgroundColor: this.props.batmode ? "black" : "white"
+                }}
+              >
+                <div
+                  style={{
+                    fontSize: "0.9vw",
+                    color: this.props.batmode ? "white" : "black"
+                  }}
+                >
+                  A platform that facilitates communications between
+                  underemployed lawyers and underprivileged clients (Uber for
+                  Lawyers).
+                </div>
+
+                <div style={{ marginTop: "1vw" }}>
+                  <Tag style={{ fontSize: "0.7vw" }} color="green">
+                    Node.js
+                  </Tag>
+                  <Tag style={{ fontSize: "0.7vw" }} color="orange">
+                    Socket.io
+                  </Tag>
+                  <Tag style={{ fontSize: "0.7vw" }} color="blue">
+                    Next.js
+                  </Tag>
+                  <Tag style={{ fontSize: "0.7vw" }} color="cyan">
+                    Loom
+                  </Tag>
+                  <Tag style={{ fontSize: "0.7vw" }} color="purple">
+                    MongoDB
+                  </Tag>
+                </div>
+                <div style={{ marginTop: "0.5vw" }}>
+                  <Tag style={{ fontSize: "0.7vw" }} color="lime">
+                    Clarifai
+                  </Tag>
+                  <Tag style={{ fontSize: "0.7vw" }} color="geekblue">
+                    Agora.io
+                  </Tag>
+                </div>
+                <div style={{ marginTop: "1vw" }}>
+                  <Tag color="#108ee9">
+                    Developerweek Hackathon 2019 Top 5 Team
+                  </Tag>
+                  <Tag color="brown">
+                    2019 Congressional App Challenge Winner (District 48)
+                  </Tag>
+                </div>
+                <div style={{ display: "flex", justifyContent: "flex-end" }}>
+                  <Button
+                    type="link"
+                    style={{ fontSize: "0.7vw" }}
+                    onClick={() =>
+                      window.open(
+                        "https://fairlegal-react.herokuapp.com",
+                        "_blank"
+                      )
+                    }
+                  >
+                    Visit
+                  </Button>
+                </div>
+              </Card>
+            </div>
+          </div>
+          <Divider />
           <div
             style={{
               display: "flex",
               flexDirection: "row",
-              width: "100vw",
-              justifyContent: "space-evenly",
-              marginTop: "2vw"
+              alignItems: "center",
+              justifyContent: "space-around",
+              width: "60vw"
             }}
           >
-            <Card
-              style={{
-                width: "20vw",
-                padding: "1vw",
-                backgroundColor: this.props.batmode ? "black" : "white"
-              }}
-              cover={<img src="/static/philanthropyclub.png" />}
-            >
+            <div style={{ width: "25vw" }}>
+              <Tag style={{ fontSize: "0.7vw" }} color="magenta">
+                Software
+              </Tag>
               <div
                 style={{
-                  fontSize: "1vw",
+                  fontSize: "1.1vw",
                   fontWeight: "bold",
                   color: this.props.batmode ? "white" : "black"
                 }}
               >
-                Sage Philanthropy Club
+                SaddlePoint 🎒
               </div>
-              <div
+              <Card
                 style={{
-                  fontSize: "0.8vw",
-                  color: this.props.batmode ? "white" : "black"
+                  backgroundColor: this.props.batmode ? "black" : "white"
                 }}
               >
-                A website that illustrates the activities of the club.
-              </div>
-            </Card>
-            <Card
-              style={{
-                width: "20vw",
-                padding: "1vw",
-                backgroundColor: this.props.batmode ? "black" : "white"
-              }}
-              cover={<img src="/static/memedb.png" />}
-            >
+                <div
+                  style={{
+                    fontSize: "0.9vw",
+                    color: this.props.batmode ? "white" : "black"
+                  }}
+                >
+                  A decentralized platform that allows students to join/make
+                  clubs, communicate within those clubs, donate funds, and
+                  transparently use those funds for necessary expenses.
+                </div>
+                <div style={{ marginTop: "1vw" }}>
+                  <Tag style={{ fontSize: "0.7vw" }} color="green">
+                    Node.js
+                  </Tag>
+                  <Tag style={{ fontSize: "0.7vw" }} color="orange">
+                    Socket.io
+                  </Tag>
+                  <Tag style={{ fontSize: "0.7vw" }} color="blue">
+                    Next.js
+                  </Tag>
+                  <Tag style={{ fontSize: "0.7vw" }} color="cyan">
+                    Loom
+                  </Tag>
+                  <Tag style={{ fontSize: "0.7vw" }} color="gold">
+                    TensorflowJS
+                  </Tag>
+                </div>
+                <div style={{ marginTop: "1vw" }}>
+                  <Tag color="#6a0dad">HackSocal 2nd Place</Tag>
+                </div>
+                <div style={{ display: "flex", justifyContent: "flex-end" }}>
+                  <Button
+                    type="link"
+                    style={{ fontSize: "0.7vw" }}
+                    onClick={() =>
+                      window.open(
+                        "https://saddle-point.herokuapp.com",
+                        "_blank"
+                      )
+                    }
+                  >
+                    Visit
+                  </Button>
+                </div>
+              </Card>
+            </div>
+            <img
+              width="35%"
+              src={
+                "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/saddlepoint.png"
+              }
+            />
+          </div>
+          <Divider />
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+              justifyContent: "space-around",
+              width: "60vw"
+            }}
+          >
+            <img
+              width="30%"
+              src={
+                "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/memedb.png"
+              }
+            />
+            <div style={{ width: "25vw" }}>
+              <Tag style={{ fontSize: "0.7vw" }} color="magenta">
+                Software
+              </Tag>
               <div
                 style={{
-                  fontSize: "1vw",
+                  fontSize: "1.1vw",
                   fontWeight: "bold",
                   color: this.props.batmode ? "white" : "black"
                 }}
               >
-                MemeDB
+                MemeDB 🤠
               </div>
-              <div
+              <Card
                 style={{
-                  fontSize: "0.8vw",
-                  color: this.props.batmode ? "white" : "black"
+                  backgroundColor: this.props.batmode ? "black" : "white"
                 }}
               >
-                An application that uses machine learning to sort memes.
-              </div>
-            </Card>{" "}
-            <Card
-              style={{
-                width: "20vw",
-                padding: "1vw",
-                backgroundColor: this.props.batmode ? "black" : "white"
-              }}
-              cover={<img src="/static/wokefaucet.png" />}
-            >
+                <div
+                  style={{
+                    fontSize: "1vw",
+                    color: this.props.batmode ? "white" : "black"
+                  }}
+                >
+                  An application that uses machine learning to classify memes.
+                </div>
+
+                <div style={{ marginTop: "1vw" }}>
+                  <Tag style={{ fontSize: "0.7vw" }} color="blue">
+                    Next.js
+                  </Tag>
+                  <Tag style={{ fontSize: "0.7vw" }} color="volcano">
+                    Firebase
+                  </Tag>
+                </div>
+                <div style={{ display: "flex", justifyContent: "flex-end" }}>
+                  <Button
+                    type="link"
+                    style={{ fontSize: "0.7vw" }}
+                    onClick={() =>
+                      window.open(
+                        "https://meme-database.jackie-ni.now.sh",
+                        "_blank"
+                      )
+                    }
+                  >
+                    Visit
+                  </Button>
+                </div>
+              </Card>
+            </div>
+          </div>
+          <Divider />
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+              justifyContent: "space-around",
+              width: "60vw"
+            }}
+          >
+            <div style={{ width: "25vw" }}>
+              <Tag style={{ fontSize: "0.7vw" }} color="magenta">
+                Software
+              </Tag>
               <div
                 style={{
-                  fontSize: "1vw",
+                  fontSize: "1.1vw",
                   fontWeight: "bold",
                   color: this.props.batmode ? "white" : "black"
                 }}
               >
-                WokeFaucet
+                Flappy Jackie 🐔
               </div>
-              <div
+              <Card
                 style={{
-                  fontSize: "0.8vw",
-                  color: this.props.batmode ? "white" : "black"
+                  backgroundColor: this.props.batmode ? "black" : "white"
                 }}
               >
-                A website that generates revenue through giving away free
-                satoshi in exchange for ad viewers.
-              </div>
-            </Card>
-            <Card
-              style={{
-                width: "20vw",
-                padding: "1vw",
-                backgroundColor: this.props.batmode ? "black" : "white"
-              }}
-              cover={<img src="/static/sageexit.png" />}
-            >
-              <div
-                style={{
-                  fontSize: "1vw",
-                  fontWeight: "bold",
-                  color: this.props.batmode ? "white" : "black"
-                }}
-              >
-                SageExit
-              </div>
-              <div
-                style={{
-                  fontSize: "0.8vw",
-                  color: this.props.batmode ? "white" : "black"
-                }}
-              >
-                A SMS service that allows Sage students to leave school faster.
-              </div>
-            </Card>{" "}
+                <div
+                  style={{
+                    fontSize: "0.9vw",
+                    color: this.props.batmode ? "white" : "black"
+                  }}
+                >
+                  A better version of Flappy Bird.
+                </div>
+
+                <div style={{ marginTop: "1vw" }}>
+                  <Tag style={{ fontSize: "0.7vw" }} color="red">
+                    React Native
+                  </Tag>
+                </div>
+                <div style={{ display: "flex", justifyContent: "flex-end" }}>
+                  <Button
+                    type="link"
+                    style={{ fontSize: "0.7vw" }}
+                    onClick={() =>
+                      window.open(
+                        "https://jackien1.github.io/flappyjackie/",
+                        "_blank"
+                      )
+                    }
+                  >
+                    Visit
+                  </Button>
+                </div>
+              </Card>
+            </div>
+
+            <img
+              width="15%"
+              src={
+                "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/flappyjackie.png"
+              }
+            />
           </div>
         </div>
       </div>

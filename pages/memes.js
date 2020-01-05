@@ -49,7 +49,7 @@ class Memes extends Component {
               justifyContent: "center",
               alignItems: "center",
               flexDirection: "row",
-              height: "95vh",
+              height: "100vh",
               width: "100vw"
             }}
           >
@@ -59,15 +59,14 @@ class Memes extends Component {
                   fontWeight: "bold",
                   fontSize: "4vw",
                   color: this.props.batmode ? "white" : "black",
-                  textAlign: "center",
-                  marginBottom: "2vw"
+                  textAlign: "center"
                 }}
               >
                 Gallery
               </div>
 
               <div style={{ width: "90vw" }}>
-                <Marquee velocity={25}>
+                <Marquee velocity={20}>
                   {times(5, Number).map(id => {
                     return (
                       <Photo
@@ -84,7 +83,7 @@ class Memes extends Component {
               <div style={{ height: "2vw" }} />
 
               <div style={{ width: "90vw" }}>
-                <Marquee velocity={25}>
+                <Marquee velocity={20}>
                   {times(5, Number).map(id => {
                     return (
                       <Photo

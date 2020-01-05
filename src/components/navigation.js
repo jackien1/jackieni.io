@@ -18,7 +18,7 @@ class Navigation extends Component {
           justifyContent: "space-between",
           padding: "1vw",
           top: 0,
-          backgroundColor: this.props.batmode ? "black" : "white"
+          backgroundColor: "transparent"
         }}
       >
         <Button
