@@ -13,9 +13,11 @@ class Navigation extends Component {
           width: "100vw",
           height: "5vh",
           display: "flex",
+          position: "absolute",
           flexDirection: "row",
           justifyContent: "space-between",
           padding: "1vw",
+          top: 0,
           backgroundColor: this.props.batmode ? "black" : "white"
         }}
       >

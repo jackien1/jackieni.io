@@ -49175,9 +49175,11 @@ function (_Component) {
           width: "100vw",
           height: "5vh",
           display: "flex",
+          position: "absolute",
           flexDirection: "row",
           justifyContent: "space-between",
           padding: "1vw",
+          top: 0,
           backgroundColor: this.props.batmode ? "black" : "white"
         },
         __source: {
@@ -49196,7 +49198,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 24
         },
         __self: this
       }, "jackieni.io"), __jsx("div", {
@@ -49207,7 +49209,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 35
         },
         __self: this
       }, __jsx(antd_lib_button__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -49221,7 +49223,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 42
         },
         __self: this
       }, "Memes"), __jsx(antd_lib_button__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -49235,7 +49237,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 53
         },
         __self: this
       }, "Projects"), __jsx(antd_lib_button__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -49255,7 +49257,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62
+          lineNumber: 64
         },
         __self: this
       }, __jsx("img", {
@@ -49265,7 +49267,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 78
+          lineNumber: 80
         },
         __self: this
       }), __jsx("div", {
@@ -49276,7 +49278,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86
+          lineNumber: 88
         },
         __self: this
       }, "Batmode"))));
@@ -49350,7 +49352,7 @@ var CHANGE_BATMODE = "change_batmode";
 
 /***/ }),
 
-/***/ 5:
+/***/ 10:
 /*!*******************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fmemes&absolutePagePath=%2FUsers%2Fjackieni%2Fdev%2Fpersonal%2Fjackieni.io%2Fpages%2Fmemes.js ***!
   \*******************************************************************************************************************************************/
@@ -49373,5 +49375,5 @@ module.exports = dll_13346faca0e924a89b24;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js","styles"]]]);
+},[[10,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=memes.js.map

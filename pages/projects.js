@@ -11,101 +11,92 @@ class Projects extends Component {
       <div>
         <div
           style={{
-            height: "100vh",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "column",
+            height: "50vh",
+            paddingBottom: "5vh",
             backgroundColor: this.props.batmode ? "black" : "white"
           }}
         >
           <div
             style={{
               display: "flex",
-              justifyContent: "center",
+              flexDirection: "row",
               alignItems: "center",
-              flexDirection: "column",
-              height: "95vh",
-              paddingBottom: "5vh"
+              justifyContent: "space-around",
+              width: "80vw"
             }}
           >
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "center",
-                justifyContent: "space-around",
-                width: "80vw"
-              }}
-            >
-              <div style={{ width: "30vw" }}>
-                <Tag style={{ fontSize: "0.8vw" }} color="magenta">
-                  Featured
-                </Tag>
+            <div style={{ width: "30vw" }}>
+              <Tag style={{ fontSize: "0.8vw" }} color="magenta">
+                Featured
+              </Tag>
+              <div
+                style={{
+                  fontSize: "1.2vw",
+                  fontWeight: "bold",
+                  color: this.props.batmode ? "white" : "black"
+                }}
+              >
+                DimeDrop.io 🏀
+              </div>
+              <Card
+                style={{
+                  backgroundColor: this.props.batmode ? "black" : "white"
+                }}
+              >
                 <div
                   style={{
-                    fontSize: "1.2vw",
-                    fontWeight: "bold",
+                    fontSize: "1vw",
                     color: this.props.batmode ? "white" : "black"
                   }}
                 >
-                  DimeDrop.io 🏀
+                  I started working on this project during a hackathon in the
+                  summer of 2018. It is a sports fantasy basketball game built
+                  on the blockchain where users can trade, play, and develop
+                  animated characters (non-fungible tokens). Currently, I
+                  function as the CTO and continue to work on the back-end of
+                  this application.
                 </div>
-                <Card
-                  style={{
-                    backgroundColor: this.props.batmode ? "black" : "white"
-                  }}
-                >
-                  <div
-                    style={{
-                      fontSize: "1vw",
-                      color: this.props.batmode ? "white" : "black"
-                    }}
+
+                <div style={{ marginTop: "1vw" }}>
+                  <Tag style={{ fontSize: "0.8vw" }} color="green">
+                    Node.js
+                  </Tag>
+                  <Tag style={{ fontSize: "0.8vw" }} color="orange">
+                    Socket.io
+                  </Tag>
+                  <Tag style={{ fontSize: "0.8vw" }} color="blue">
+                    Next.js
+                  </Tag>
+                  <Tag style={{ fontSize: "0.8vw" }} color="red">
+                    Infura
+                  </Tag>
+                  <Tag style={{ fontSize: "0.8vw" }} color="cyan">
+                    Loom
+                  </Tag>
+                </div>
+
+                <div style={{ display: "flex", justifyContent: "flex-end" }}>
+                  <Button
+                    type="link"
+                    style={{ fontSize: "0.8vw" }}
+                    onClick={() => window.open("https://dimedrop.io", "_blank")}
                   >
-                    I started working on this project during a hackathon in the
-                    summer of 2018. It is a sports fantasy basketball game built
-                    on the blockchain where users can trade, play, and develop
-                    animated characters (non-fungible tokens). Currently, I
-                    function as the CTO and continue to work on the back-end of
-                    this application.
-                  </div>
-
-                  <div style={{ marginTop: "1vw" }}>
-                    <Tag style={{ fontSize: "0.8vw" }} color="green">
-                      Node.js
-                    </Tag>
-                    <Tag style={{ fontSize: "0.8vw" }} color="orange">
-                      Socket.io
-                    </Tag>
-                    <Tag style={{ fontSize: "0.8vw" }} color="blue">
-                      Next.js
-                    </Tag>
-                    <Tag style={{ fontSize: "0.8vw" }} color="red">
-                      Infura
-                    </Tag>
-                    <Tag style={{ fontSize: "0.8vw" }} color="cyan">
-                      Loom
-                    </Tag>
-                  </div>
-
-                  <div style={{ display: "flex", justifyContent: "flex-end" }}>
-                    <Button
-                      type="link"
-                      style={{ fontSize: "0.8vw" }}
-                      onClick={() =>
-                        window.open("https://dimedrop.io", "_blank")
-                      }
-                    >
-                      Visit
-                    </Button>
-                  </div>
-                </Card>
-              </div>
-
-              <img style={{ width: "50%" }} src={"/static/dimedrop.png"} />
+                    Visit
+                  </Button>
+                </div>
+              </Card>
             </div>
+
+            <img style={{ width: "50%" }} src={"/static/dimedrop.png"} />
           </div>
         </div>
 
         <div
           style={{
-            height: "100vh",
             backgroundColor: this.props.batmode ? "black" : "white",
             display: "flex",
             justifyContent: "center",

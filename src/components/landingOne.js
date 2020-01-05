@@ -4,7 +4,6 @@ import { Icon } from "antd";
 
 class LandingOne extends Component {
   render() {
-    console.log(this.props.batmode);
     return (
       <div
         style={{

@@ -34,22 +34,9 @@ class LandingTwo extends Component {
             </div>
             <div
               style={{
-                fontWeight: "bold",
-                fontSize: "1vw",
-                color: "white",
-                textAlign: "center"
-              }}
-            >
-              The philosophy I follow when I'm not tired (or remember that it
-              exists).
-            </div>
-
-            <div
-              style={{
                 display: "flex",
                 width: "100vw",
-                justifyContent: "space-around",
-                marginTop: "4vw"
+                justifyContent: "space-around"
               }}
             >
               <div style={{ display: "flex", flexDirection: "column" }}>

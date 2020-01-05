@@ -7,12 +7,16 @@ class Footer extends Component {
     return (
       <div
         style={{
+          width: "100vw",
+          height: "5vh",
+          bottom: "0",
           display: "flex",
+          flex: 1,
+          position: "absolute",
           justifyContent: "center",
           alignItems: "center",
           flexDirection: "row",
-          backgroundColor: this.props.batmode ? "black" : "white",
-          height: "10vh"
+          backgroundColor: "transparent"
         }}
       >
         <div
@@ -20,7 +24,7 @@ class Footer extends Component {
             display: "flex",
             fontSize: "1vw",
             fontWeight: "bold",
-            color: this.props.batmode ? "white" : "black"
+            color: "white"
           }}
         >
           Not Real Copyright © 2019 Jackie Ni
