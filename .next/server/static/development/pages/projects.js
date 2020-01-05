@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2299,7 +2299,7 @@ class Projects extends react__WEBPACK_IMPORTED_MODULE_8__["Component"] {
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "space-around",
-        width: "60vw"
+        width: "100vw"
       },
       __source: {
         fileName: _jsxFileName,
@@ -2308,7 +2308,7 @@ class Projects extends react__WEBPACK_IMPORTED_MODULE_8__["Component"] {
       __self: this
     }, __jsx("div", {
       style: {
-        width: "25vw"
+        width: "20vw"
       },
       __source: {
         fileName: _jsxFileName,
@@ -2317,7 +2317,7 @@ class Projects extends react__WEBPACK_IMPORTED_MODULE_8__["Component"] {
       __self: this
     }, __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
       style: {
-        fontSize: "0.7vw"
+        fontSize: "0.6vw"
       },
       color: "magenta",
       __source: {
@@ -2327,7 +2327,7 @@ class Projects extends react__WEBPACK_IMPORTED_MODULE_8__["Component"] {
       __self: this
     }, "Software"), __jsx("div", {
       style: {
-        fontSize: "1.1vw",
+        fontSize: "1vw",
         fontWeight: "bold",
         color: this.props.batmode ? "white" : "black"
       },
@@ -2336,7 +2336,7 @@ class Projects extends react__WEBPACK_IMPORTED_MODULE_8__["Component"] {
         lineNumber: 43
       },
       __self: this
-    }, "DimeDrop.io \uD83C\uDFC0"), __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_7___default.a, {
+    }, "Dime \uD83C\uDFC0"), __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_7___default.a, {
       style: {
         backgroundColor: this.props.batmode ? "black" : "white"
       },
@@ -2347,7 +2347,7 @@ class Projects extends react__WEBPACK_IMPORTED_MODULE_8__["Component"] {
       __self: this
     }, __jsx("div", {
       style: {
-        fontSize: "0.9vw",
+        fontSize: "0.8vw",
         color: this.props.batmode ? "white" : "black"
       },
       __source: {
@@ -2366,7 +2366,7 @@ class Projects extends react__WEBPACK_IMPORTED_MODULE_8__["Component"] {
       __self: this
     }, __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
       style: {
-        fontSize: "0.7vw"
+        fontSize: "0.6vw"
       },
       color: "green",
       __source: {
@@ -2376,61 +2376,51 @@ class Projects extends react__WEBPACK_IMPORTED_MODULE_8__["Component"] {
       __self: this
     }, "Node.js"), __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
       style: {
-        fontSize: "0.7vw"
+        fontSize: "0.6vw"
       },
-      color: "orange",
+      color: "blue",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 72
       },
       __self: this
-    }, "Socket.io"), __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
+    }, "Next.js"), __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
       style: {
-        fontSize: "0.7vw"
+        fontSize: "0.6vw"
       },
-      color: "blue",
+      color: "cyan",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 75
       },
       __self: this
-    }, "Next.js"), __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
-      style: {
-        fontSize: "0.7vw"
-      },
-      color: "cyan",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 78
-      },
-      __self: this
-    }, "Loom"), __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
-      style: {
-        fontSize: "0.7vw"
-      },
-      color: "purple",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 81
-      },
-      __self: this
-    }, "MongoDB"), __jsx("div", {
+    }, "Loom"), __jsx("div", {
       style: {
         marginTop: "0.5vw"
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 84
+        lineNumber: 78
       },
       __self: this
     }, __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
       style: {
-        fontSize: "0.7vw"
+        fontSize: "0.6vw"
+      },
+      color: "purple",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 79
+      },
+      __self: this
+    }, "MongoDB"), __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      style: {
+        fontSize: "0.6vw"
       },
       color: "volcano",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 85
+        lineNumber: 82
       },
       __self: this
     }, "Firebase"))), __jsx("div", {
@@ -2439,28 +2429,37 @@ class Projects extends react__WEBPACK_IMPORTED_MODULE_8__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 91
+        lineNumber: 88
       },
       __self: this
     }, __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      style: {
+        fontSize: "0.6vw"
+      },
       color: "#f50",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 89
+      },
+      __self: this
+    }, "AngelHack 2018 LA Hackathon Grand Prize Winner"), __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      style: {
+        fontSize: "0.6vw"
+      },
+      color: "#2db7f5",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 92
       },
       __self: this
-    }, "AngelHack 2018 LA Hackathon Grand Prize Winner"), __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
-      color: "#2db7f5",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 95
-      },
-      __self: this
     }, "AngelHack HACKcelerator 2018 Finalist"), __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      style: {
+        fontSize: "0.6vw"
+      },
       color: "#87d068",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 98
+        lineNumber: 95
       },
       __self: this
     }, "500 Startups Award (at Global Demo Day 2018)")), __jsx("div", {
@@ -2470,83 +2469,48 @@ class Projects extends react__WEBPACK_IMPORTED_MODULE_8__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 103
+        lineNumber: 100
       },
       __self: this
     }, __jsx(antd_lib_button__WEBPACK_IMPORTED_MODULE_3___default.a, {
       type: "link",
       style: {
-        fontSize: "0.7vw"
+        fontSize: "0.6vw"
       },
       onClick: () => window.open("https://dimedrop.io", "_blank"),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 104
+        lineNumber: 101
       },
       __self: this
-    }, "Visit")))), __jsx("img", {
-      width: "45%",
-      src: "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/dime.png",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 114
-      },
-      __self: this
-    })), __jsx(antd_lib_divider__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 121
-      },
-      __self: this
-    }), __jsx("div", {
+    }, "Visit")))), __jsx("div", {
       style: {
-        display: "flex",
-        flexDirection: "row",
-        alignItems: "center",
-        justifyContent: "space-around",
-        width: "60vw"
+        width: "20vw"
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 122
-      },
-      __self: this
-    }, __jsx("img", {
-      width: "40%",
-      src: "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/fairlegal.png",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 131
-      },
-      __self: this
-    }), __jsx("div", {
-      style: {
-        width: "25vw"
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 138
+        lineNumber: 111
       },
       __self: this
     }, __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
       style: {
-        fontSize: "0.7vw"
+        fontSize: "0.6vw"
       },
       color: "magenta",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 139
+        lineNumber: 112
       },
       __self: this
     }, "Software"), __jsx("div", {
       style: {
-        fontSize: "1.1vw",
+        fontSize: "1vw",
         fontWeight: "bold",
         color: this.props.batmode ? "white" : "black"
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 142
+        lineNumber: 115
       },
       __self: this
     }, "FairLegal \u2696\uFE0F"), __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -2555,17 +2519,17 @@ class Projects extends react__WEBPACK_IMPORTED_MODULE_8__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 151
+        lineNumber: 124
       },
       __self: this
     }, __jsx("div", {
       style: {
-        fontSize: "0.9vw",
+        fontSize: "0.8vw",
         color: this.props.batmode ? "white" : "black"
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 156
+        lineNumber: 129
       },
       __self: this
     }, "A platform that facilitates communications between underemployed lawyers and underprivileged clients (Uber for Lawyers)."), __jsx("div", {
@@ -2574,109 +2538,85 @@ class Projects extends react__WEBPACK_IMPORTED_MODULE_8__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 167
+        lineNumber: 140
       },
       __self: this
     }, __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
       style: {
-        fontSize: "0.7vw"
+        fontSize: "0.6vw"
       },
       color: "green",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 168
+        lineNumber: 141
       },
       __self: this
     }, "Node.js"), __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
       style: {
-        fontSize: "0.7vw"
-      },
-      color: "orange",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 171
-      },
-      __self: this
-    }, "Socket.io"), __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
-      style: {
-        fontSize: "0.7vw"
+        fontSize: "0.6vw"
       },
       color: "blue",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 174
+        lineNumber: 144
       },
       __self: this
     }, "Next.js"), __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
       style: {
-        fontSize: "0.7vw"
+        fontSize: "0.6vw"
       },
       color: "cyan",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 177
+        lineNumber: 147
       },
       __self: this
-    }, "Loom"), __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
-      style: {
-        fontSize: "0.7vw"
-      },
-      color: "purple",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 180
-      },
-      __self: this
-    }, "MongoDB")), __jsx("div", {
+    }, "Loom")), __jsx("div", {
       style: {
         marginTop: "0.5vw"
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 184
+        lineNumber: 151
       },
       __self: this
     }, __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
       style: {
-        fontSize: "0.7vw"
+        fontSize: "0.6vw"
       },
-      color: "lime",
+      color: "purple",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 185
+        lineNumber: 152
       },
       __self: this
-    }, "Clarifai"), __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
-      style: {
-        fontSize: "0.7vw"
-      },
-      color: "geekblue",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 188
-      },
-      __self: this
-    }, "Agora.io")), __jsx("div", {
+    }, "MongoDB")), __jsx("div", {
       style: {
         marginTop: "1vw"
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 192
+        lineNumber: 156
       },
       __self: this
     }, __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      style: {
+        fontSize: "0.6vw"
+      },
       color: "#108ee9",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 193
+        lineNumber: 157
       },
       __self: this
     }, "Developerweek Hackathon 2019 Top 5 Team"), __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      style: {
+        fontSize: "0.6vw"
+      },
       color: "brown",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 196
+        lineNumber: 160
       },
       __self: this
     }, "2019 Congressional App Challenge Winner (District 48)")), __jsx("div", {
@@ -2686,67 +2626,48 @@ class Projects extends react__WEBPACK_IMPORTED_MODULE_8__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 200
+        lineNumber: 164
       },
       __self: this
     }, __jsx(antd_lib_button__WEBPACK_IMPORTED_MODULE_3___default.a, {
       type: "link",
       style: {
-        fontSize: "0.7vw"
+        fontSize: "0.6vw"
       },
       onClick: () => window.open("https://fairlegal-react.herokuapp.com", "_blank"),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 201
+        lineNumber: 165
       },
       __self: this
-    }, "Visit"))))), __jsx(antd_lib_divider__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 217
-      },
-      __self: this
-    }), __jsx("div", {
+    }, "Visit")))), __jsx("div", {
       style: {
-        display: "flex",
-        flexDirection: "row",
-        alignItems: "center",
-        justifyContent: "space-around",
-        width: "60vw"
+        width: "20vw"
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 218
-      },
-      __self: this
-    }, __jsx("div", {
-      style: {
-        width: "25vw"
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 227
+        lineNumber: 180
       },
       __self: this
     }, __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
       style: {
-        fontSize: "0.7vw"
+        fontSize: "0.6vw"
       },
       color: "magenta",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 228
+        lineNumber: 181
       },
       __self: this
     }, "Software"), __jsx("div", {
       style: {
-        fontSize: "1.1vw",
+        fontSize: "1vw",
         fontWeight: "bold",
         color: this.props.batmode ? "white" : "black"
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 231
+        lineNumber: 184
       },
       __self: this
     }, "SaddlePoint \uD83C\uDF92"), __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -2755,76 +2676,75 @@ class Projects extends react__WEBPACK_IMPORTED_MODULE_8__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 240
+        lineNumber: 193
       },
       __self: this
     }, __jsx("div", {
       style: {
-        fontSize: "0.9vw",
+        fontSize: "0.8vw",
         color: this.props.batmode ? "white" : "black"
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 245
+        lineNumber: 198
       },
       __self: this
-    }, "A decentralized platform that allows students to join/make clubs, communicate within those clubs, donate funds, and transparently use those funds for necessary expenses."), __jsx("div", {
+    }, "A platform that allows students to join/make clubs, communicate within those clubs, and transparently donate/use funds for expenses."), __jsx("div", {
       style: {
         marginTop: "1vw"
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 255
+        lineNumber: 208
       },
       __self: this
     }, __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
       style: {
-        fontSize: "0.7vw"
+        fontSize: "0.6vw"
       },
       color: "green",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 256
+        lineNumber: 209
       },
       __self: this
     }, "Node.js"), __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
       style: {
-        fontSize: "0.7vw"
-      },
-      color: "orange",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 259
-      },
-      __self: this
-    }, "Socket.io"), __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
-      style: {
-        fontSize: "0.7vw"
+        fontSize: "0.6vw"
       },
       color: "blue",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 262
+        lineNumber: 212
       },
       __self: this
     }, "Next.js"), __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
       style: {
-        fontSize: "0.7vw"
+        fontSize: "0.6vw"
       },
       color: "cyan",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 265
+        lineNumber: 215
       },
       __self: this
-    }, "Loom"), __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
+    }, "Loom")), __jsx("div", {
       style: {
-        fontSize: "0.7vw"
+        marginTop: "0.5vw"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 219
+      },
+      __self: this
+    }, __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      style: {
+        fontSize: "0.6vw"
       },
       color: "gold",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 268
+        lineNumber: 220
       },
       __self: this
     }, "TensorflowJS")), __jsx("div", {
@@ -2833,14 +2753,17 @@ class Projects extends react__WEBPACK_IMPORTED_MODULE_8__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 272
+        lineNumber: 224
       },
       __self: this
     }, __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      style: {
+        fontSize: "0.6vw"
+      },
       color: "#6a0dad",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 273
+        lineNumber: 225
       },
       __self: this
     }, "HackSocal 2nd Place")), __jsx("div", {
@@ -2850,29 +2773,120 @@ class Projects extends react__WEBPACK_IMPORTED_MODULE_8__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 275
+        lineNumber: 229
       },
       __self: this
     }, __jsx(antd_lib_button__WEBPACK_IMPORTED_MODULE_3___default.a, {
       type: "link",
       style: {
-        fontSize: "0.7vw"
+        fontSize: "0.6vw"
       },
       onClick: () => window.open("https://saddle-point.herokuapp.com", "_blank"),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 276
+        lineNumber: 230
       },
       __self: this
-    }, "Visit")))), __jsx("img", {
-      width: "35%",
-      src: "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/saddlepoint.png",
+    }, "Visit")))), __jsx("div", {
+      style: {
+        width: "20vw"
+      },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 291
+        lineNumber: 245
       },
       __self: this
-    })), __jsx(antd_lib_divider__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    }, __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      style: {
+        fontSize: "0.7vw"
+      },
+      color: "magenta",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 246
+      },
+      __self: this
+    }, "Software"), __jsx("div", {
+      style: {
+        fontSize: "1vw",
+        fontWeight: "bold",
+        color: this.props.batmode ? "white" : "black"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 249
+      },
+      __self: this
+    }, "MemeDB \uD83E\uDD20"), __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_7___default.a, {
+      style: {
+        backgroundColor: this.props.batmode ? "black" : "white"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 258
+      },
+      __self: this
+    }, __jsx("div", {
+      style: {
+        fontSize: "0.8vw",
+        color: this.props.batmode ? "white" : "black"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 263
+      },
+      __self: this
+    }, "An open database that allows users to add new memes and classify memes using machine learning."), __jsx("div", {
+      style: {
+        marginTop: "1vw"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 273
+      },
+      __self: this
+    }, __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      style: {
+        fontSize: "0.6vw"
+      },
+      color: "blue",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 274
+      },
+      __self: this
+    }, "Next.js"), __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      style: {
+        fontSize: "0.6vw"
+      },
+      color: "volcano",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 277
+      },
+      __self: this
+    }, "Firebase")), __jsx("div", {
+      style: {
+        display: "flex",
+        justifyContent: "flex-end"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 281
+      },
+      __self: this
+    }, __jsx(antd_lib_button__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      type: "link",
+      style: {
+        fontSize: "0.6vw"
+      },
+      onClick: () => window.open("https://meme-database.jackie-ni.now.sh", "_blank"),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 282
+      },
+      __self: this
+    }, "Visit"))))), __jsx(antd_lib_divider__WEBPACK_IMPORTED_MODULE_1___default.a, {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 298
@@ -2884,167 +2898,41 @@ class Projects extends react__WEBPACK_IMPORTED_MODULE_8__["Component"] {
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "space-around",
-        width: "60vw"
+        width: "100vw"
       },
       __source: {
         fileName: _jsxFileName,
         lineNumber: 299
       },
       __self: this
-    }, __jsx("img", {
-      width: "30%",
-      src: "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/memedb.png",
+    }, __jsx("div", {
+      style: {
+        width: "20vw"
+      },
       __source: {
         fileName: _jsxFileName,
         lineNumber: 308
       },
       __self: this
-    }), __jsx("div", {
-      style: {
-        width: "25vw"
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 314
-      },
-      __self: this
     }, __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
       style: {
-        fontSize: "0.7vw"
+        fontSize: "0.6vw"
       },
       color: "magenta",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 315
+        lineNumber: 309
       },
       __self: this
     }, "Software"), __jsx("div", {
-      style: {
-        fontSize: "1.1vw",
-        fontWeight: "bold",
-        color: this.props.batmode ? "white" : "black"
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 318
-      },
-      __self: this
-    }, "MemeDB \uD83E\uDD20"), __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_7___default.a, {
-      style: {
-        backgroundColor: this.props.batmode ? "black" : "white"
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 327
-      },
-      __self: this
-    }, __jsx("div", {
       style: {
         fontSize: "1vw",
-        color: this.props.batmode ? "white" : "black"
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 332
-      },
-      __self: this
-    }, "An application that uses machine learning to classify memes."), __jsx("div", {
-      style: {
-        marginTop: "1vw"
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 341
-      },
-      __self: this
-    }, __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
-      style: {
-        fontSize: "0.7vw"
-      },
-      color: "blue",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 342
-      },
-      __self: this
-    }, "Next.js"), __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
-      style: {
-        fontSize: "0.7vw"
-      },
-      color: "volcano",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 345
-      },
-      __self: this
-    }, "Firebase")), __jsx("div", {
-      style: {
-        display: "flex",
-        justifyContent: "flex-end"
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 349
-      },
-      __self: this
-    }, __jsx(antd_lib_button__WEBPACK_IMPORTED_MODULE_3___default.a, {
-      type: "link",
-      style: {
-        fontSize: "0.7vw"
-      },
-      onClick: () => window.open("https://meme-database.jackie-ni.now.sh", "_blank"),
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 350
-      },
-      __self: this
-    }, "Visit"))))), __jsx(antd_lib_divider__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 366
-      },
-      __self: this
-    }), __jsx("div", {
-      style: {
-        display: "flex",
-        flexDirection: "row",
-        alignItems: "center",
-        justifyContent: "space-around",
-        width: "60vw"
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 367
-      },
-      __self: this
-    }, __jsx("div", {
-      style: {
-        width: "25vw"
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 376
-      },
-      __self: this
-    }, __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
-      style: {
-        fontSize: "0.7vw"
-      },
-      color: "magenta",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 377
-      },
-      __self: this
-    }, "Software"), __jsx("div", {
-      style: {
-        fontSize: "1.1vw",
         fontWeight: "bold",
         color: this.props.batmode ? "white" : "black"
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 380
+        lineNumber: 312
       },
       __self: this
     }, "Flappy Jackie \uD83D\uDC14"), __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -3053,36 +2941,36 @@ class Projects extends react__WEBPACK_IMPORTED_MODULE_8__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 389
+        lineNumber: 321
       },
       __self: this
     }, __jsx("div", {
       style: {
-        fontSize: "0.9vw",
+        fontSize: "0.8vw",
         color: this.props.batmode ? "white" : "black"
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 394
+        lineNumber: 326
       },
       __self: this
-    }, "A better version of Flappy Bird."), __jsx("div", {
+    }, "A parody of Flappy Bird that uses my face as the bird."), __jsx("div", {
       style: {
         marginTop: "1vw"
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 403
+        lineNumber: 335
       },
       __self: this
     }, __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
       style: {
-        fontSize: "0.7vw"
+        fontSize: "0.6vw"
       },
       color: "red",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 404
+        lineNumber: 336
       },
       __self: this
     }, "React Native")), __jsx("div", {
@@ -3092,29 +2980,891 @@ class Projects extends react__WEBPACK_IMPORTED_MODULE_8__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 408
+        lineNumber: 340
       },
       __self: this
     }, __jsx(antd_lib_button__WEBPACK_IMPORTED_MODULE_3___default.a, {
       type: "link",
       style: {
-        fontSize: "0.7vw"
+        fontSize: "0.6vw"
       },
       onClick: () => window.open("https://jackien1.github.io/flappyjackie/", "_blank"),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 341
+      },
+      __self: this
+    }, "Visit")))), __jsx("div", {
+      style: {
+        width: "20vw"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 356
+      },
+      __self: this
+    }, __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      style: {
+        fontSize: "0.6vw"
+      },
+      color: "magenta",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 357
+      },
+      __self: this
+    }, "Software"), __jsx("div", {
+      style: {
+        fontSize: "1vw",
+        fontWeight: "bold",
+        color: this.props.batmode ? "white" : "black"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 360
+      },
+      __self: this
+    }, "Meme Trends \uD83D\uDCC8"), __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_7___default.a, {
+      style: {
+        backgroundColor: this.props.batmode ? "black" : "white"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 369
+      },
+      __self: this
+    }, __jsx("div", {
+      style: {
+        fontSize: "0.8vw",
+        color: this.props.batmode ? "white" : "black"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 374
+      },
+      __self: this
+    }, "A mobile application that tracks the popularity of different meme formats."), __jsx("div", {
+      style: {
+        marginTop: "1vw"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 384
+      },
+      __self: this
+    }, __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      style: {
+        fontSize: "0.6vw"
+      },
+      color: "green",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 385
+      },
+      __self: this
+    }, "Node.js"), __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      style: {
+        fontSize: "0.6vw"
+      },
+      color: "red",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 388
+      },
+      __self: this
+    }, "React Native")), __jsx("div", {
+      style: {
+        display: "flex",
+        justifyContent: "flex-end"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 392
+      },
+      __self: this
+    }, __jsx(antd_lib_button__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      type: "link",
+      style: {
+        fontSize: "0.6vw"
+      },
+      onClick: () => window.open("https://expo.io/@eln1n0/memetrends", "_blank"),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 393
+      },
+      __self: this
+    }, "Visit")))), __jsx("div", {
+      style: {
+        width: "20vw"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 408
+      },
+      __self: this
+    }, __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      style: {
+        fontSize: "0.6vw"
+      },
+      color: "magenta",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 409
       },
       __self: this
-    }, "Visit")))), __jsx("img", {
-      width: "15%",
-      src: "https://s3.eu-west-3.amazonaws.com/jackieni.io/memes/flappyjackie.png",
+    }, "Software"), __jsx("div", {
+      style: {
+        fontSize: "1vw",
+        fontWeight: "bold",
+        color: this.props.batmode ? "white" : "black"
+      },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 425
+        lineNumber: 412
       },
       __self: this
-    }))));
+    }, "Sage Exit \uD83E\uDD16"), __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_7___default.a, {
+      style: {
+        backgroundColor: this.props.batmode ? "black" : "white"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 421
+      },
+      __self: this
+    }, __jsx("div", {
+      style: {
+        fontSize: "0.8vw",
+        color: this.props.batmode ? "white" : "black"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 426
+      },
+      __self: this
+    }, "An SMS bot that helps students at Sage Hill obtain QR code exit passes to safely exit campus faster."), __jsx("div", {
+      style: {
+        marginTop: "1vw"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 435
+      },
+      __self: this
+    }, __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      style: {
+        fontSize: "0.6vw"
+      },
+      color: "green",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 436
+      },
+      __self: this
+    }, "Node.js"), __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      style: {
+        fontSize: "0.6vw"
+      },
+      color: "purple",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 439
+      },
+      __self: this
+    }, "MongoDB")), __jsx("div", {
+      style: {
+        display: "flex",
+        justifyContent: "flex-end"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 443
+      },
+      __self: this
+    }, __jsx(antd_lib_button__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      type: "link",
+      style: {
+        fontSize: "0.6vw"
+      },
+      href: "tel:916-438-9774",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 444
+      },
+      __self: this
+    }, "Visit")))), __jsx("div", {
+      style: {
+        width: "20vw"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 454
+      },
+      __self: this
+    }, __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      style: {
+        fontSize: "0.6vw"
+      },
+      color: "geekblue",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 455
+      },
+      __self: this
+    }, "Event"), __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      style: {
+        fontSize: "0.6vw"
+      },
+      color: "magenta",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 458
+      },
+      __self: this
+    }, "Software"), __jsx("div", {
+      style: {
+        fontSize: "1vw",
+        fontWeight: "bold",
+        color: this.props.batmode ? "white" : "black"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 461
+      },
+      __self: this
+    }, "SageHack \uD83D\uDDA5\uFE0F"), __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_7___default.a, {
+      style: {
+        backgroundColor: this.props.batmode ? "black" : "white"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 470
+      },
+      __self: this
+    }, __jsx("div", {
+      style: {
+        fontSize: "0.8vw",
+        color: this.props.batmode ? "white" : "black"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 475
+      },
+      __self: this
+    }, "Sage Hill School's First Hackathon. An event that hopes to promote Computer Science and develop solutions to local issues within Orange County."), __jsx("div", {
+      style: {
+        marginTop: "1vw"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 485
+      },
+      __self: this
+    }, __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      style: {
+        fontSize: "0.6vw"
+      },
+      color: "blue",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 486
+      },
+      __self: this
+    }, "Next.js")), __jsx("div", {
+      style: {
+        display: "flex",
+        justifyContent: "flex-end"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 490
+      },
+      __self: this
+    }, __jsx(antd_lib_button__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      type: "link",
+      style: {
+        fontSize: "0.6vw"
+      },
+      onClick: () => window.open("https://sagehack.io", "_blank"),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 491
+      },
+      __self: this
+    }, "Visit"))))), __jsx(antd_lib_divider__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 502
+      },
+      __self: this
+    }), __jsx("div", {
+      style: {
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "space-around",
+        width: "100vw"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 503
+      },
+      __self: this
+    }, __jsx("div", {
+      style: {
+        width: "20vw"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 512
+      },
+      __self: this
+    }, __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      style: {
+        fontSize: "0.6vw"
+      },
+      color: "magenta",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 513
+      },
+      __self: this
+    }, "Software"), __jsx("div", {
+      style: {
+        fontSize: "1vw",
+        fontWeight: "bold",
+        color: this.props.batmode ? "white" : "black"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 516
+      },
+      __self: this
+    }, "ACEing Autism \uD83C\uDFBE"), __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_7___default.a, {
+      style: {
+        backgroundColor: this.props.batmode ? "black" : "white"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 525
+      },
+      __self: this
+    }, __jsx("div", {
+      style: {
+        fontSize: "0.8vw",
+        color: this.props.batmode ? "white" : "black"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 530
+      },
+      __self: this
+    }, "A website that helps participants register, donate, or learn more about ACEing Autism (an organization that teaches tennis to children with autism)."), __jsx("div", {
+      style: {
+        marginTop: "1vw"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 541
+      },
+      __self: this
+    }, __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      style: {
+        fontSize: "0.6vw"
+      },
+      color: "blue",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 542
+      },
+      __self: this
+    }, "Next.js")), __jsx("div", {
+      style: {
+        display: "flex",
+        justifyContent: "flex-end"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 546
+      },
+      __self: this
+    }, __jsx(antd_lib_button__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      type: "link",
+      style: {
+        fontSize: "0.6vw"
+      },
+      onClick: () => window.open("https://sageaceingautism.org", "_blank"),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 547
+      },
+      __self: this
+    }, "Visit")))), __jsx("div", {
+      style: {
+        width: "20vw"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 559
+      },
+      __self: this
+    }, __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      style: {
+        fontSize: "0.6vw"
+      },
+      color: "magenta",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 560
+      },
+      __self: this
+    }, "Software"), __jsx("div", {
+      style: {
+        fontSize: "1vw",
+        fontWeight: "bold",
+        color: this.props.batmode ? "white" : "black"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 563
+      },
+      __self: this
+    }, "Flare Magazine \uD83C\uDF80"), __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_7___default.a, {
+      style: {
+        backgroundColor: this.props.batmode ? "black" : "white"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 572
+      },
+      __self: this
+    }, __jsx("div", {
+      style: {
+        fontSize: "0.8vw",
+        color: this.props.batmode ? "white" : "black"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 577
+      },
+      __self: this
+    }, "A website that showcases articles from Sage Hill School\u2019s Flare Magazine, which promotes female empowerment through fashion."), __jsx("div", {
+      style: {
+        marginTop: "1vw"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 588
+      },
+      __self: this
+    }, __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      style: {
+        fontSize: "0.6vw"
+      },
+      color: "lime",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 589
+      },
+      __self: this
+    }, "Wordpress")), __jsx("div", {
+      style: {
+        display: "flex",
+        justifyContent: "flex-end"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 593
+      },
+      __self: this
+    }, __jsx(antd_lib_button__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      type: "link",
+      style: {
+        fontSize: "0.6vw"
+      },
+      onClick: () => window.open("http://shsflaremag.com", "_blank"),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 594
+      },
+      __self: this
+    }, "Visit")))), __jsx("div", {
+      style: {
+        width: "20vw"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 606
+      },
+      __self: this
+    }, __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      style: {
+        fontSize: "0.6vw"
+      },
+      color: "magenta",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 607
+      },
+      __self: this
+    }, "Software"), __jsx("div", {
+      style: {
+        fontSize: "1vw",
+        fontWeight: "bold",
+        color: this.props.batmode ? "white" : "black"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 610
+      },
+      __self: this
+    }, "Philanthropy Club \uD83D\uDCB5"), __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_7___default.a, {
+      style: {
+        backgroundColor: this.props.batmode ? "black" : "white"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 619
+      },
+      __self: this
+    }, __jsx("div", {
+      style: {
+        fontSize: "0.8vw",
+        color: this.props.batmode ? "white" : "black"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 624
+      },
+      __self: this
+    }, "A website that details the exploits of Sage Hill's Philanthropy Club (an organization that combats problems within the community through donations and volunteering)."), __jsx("div", {
+      style: {
+        marginTop: "1vw"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 634
+      },
+      __self: this
+    }, __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      style: {
+        fontSize: "0.6vw"
+      },
+      color: "lime",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 635
+      },
+      __self: this
+    }, "Wordpress")), __jsx("div", {
+      style: {
+        display: "flex",
+        justifyContent: "flex-end"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 639
+      },
+      __self: this
+    }, __jsx(antd_lib_button__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      type: "link",
+      style: {
+        fontSize: "0.6vw"
+      },
+      onClick: () => window.open("http://shsphilanthropyclub.org", "_blank"),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 640
+      },
+      __self: this
+    }, "Visit")))), __jsx("div", {
+      style: {
+        width: "20vw"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 652
+      },
+      __self: this
+    }, __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      style: {
+        fontSize: "0.6vw"
+      },
+      color: "orange",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 653
+      },
+      __self: this
+    }, "Hardware"), __jsx("div", {
+      style: {
+        fontSize: "1vw",
+        fontWeight: "bold",
+        color: this.props.batmode ? "white" : "black"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 656
+      },
+      __self: this
+    }, "Prom Robot \uD83D\uDC11"), __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_7___default.a, {
+      style: {
+        backgroundColor: this.props.batmode ? "black" : "white"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 665
+      },
+      __self: this
+    }, __jsx("div", {
+      style: {
+        fontSize: "0.8vw",
+        color: this.props.batmode ? "white" : "black"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 670
+      },
+      __self: this
+    }, "A moving robot that looks like a Christmas present and opens up to reveal a prom poster as well as a plush lamb. Used to ask a friend out to prom dance."), __jsx("div", {
+      style: {
+        display: "flex",
+        justifyContent: "flex-end"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 680
+      },
+      __self: this
+    }, __jsx(antd_lib_button__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      type: "link",
+      style: {
+        fontSize: "0.6vw"
+      },
+      onClick: () => window.open("https://www.youtube.com/watch?v=QebG41_WthY", "_blank"),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 681
+      },
+      __self: this
+    }, "Visit"))))), __jsx(antd_lib_divider__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 697
+      },
+      __self: this
+    }), __jsx("div", {
+      style: {
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "space-around",
+        width: "100vw"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 698
+      },
+      __self: this
+    }, __jsx("div", {
+      style: {
+        width: "20vw"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 707
+      },
+      __self: this
+    }, __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      style: {
+        fontSize: "0.6vw"
+      },
+      color: "orange",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 708
+      },
+      __self: this
+    }, "Hardware"), __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      style: {
+        fontSize: "0.6vw"
+      },
+      color: "magenta",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 711
+      },
+      __self: this
+    }, "Software"), __jsx("div", {
+      style: {
+        fontSize: "1vw",
+        fontWeight: "bold",
+        color: this.props.batmode ? "white" : "black"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 714
+      },
+      __self: this
+    }, "Screaming Roomba \uD83D\uDE31"), __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_7___default.a, {
+      style: {
+        backgroundColor: this.props.batmode ? "black" : "white"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 723
+      },
+      __self: this
+    }, __jsx("div", {
+      style: {
+        fontSize: "0.8vw",
+        color: this.props.batmode ? "white" : "black"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 728
+      },
+      __self: this
+    }, "A roomba that screams in agonizing pain whenever it bumps into anything."), __jsx("div", {
+      style: {
+        marginTop: "1vw"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 737
+      },
+      __self: this
+    }, __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      style: {
+        fontSize: "0.6vw"
+      },
+      color: "green",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 738
+      },
+      __self: this
+    }, "Node.js")), __jsx("div", {
+      style: {
+        display: "flex",
+        justifyContent: "flex-end"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 742
+      },
+      __self: this
+    }, __jsx(antd_lib_button__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      type: "link",
+      style: {
+        fontSize: "0.6vw"
+      },
+      onClick: () => window.open("https://www.youtube.com/watch?v=RXyDz6TEi-E", "_blank"),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 743
+      },
+      __self: this
+    }, "Visit")))), __jsx("div", {
+      style: {
+        width: "20vw"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 758
+      },
+      __self: this
+    }, __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      style: {
+        fontSize: "0.6vw"
+      },
+      color: "orange",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 759
+      },
+      __self: this
+    }, "Hardware"), __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      style: {
+        fontSize: "0.6vw"
+      },
+      color: "magenta",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 762
+      },
+      __self: this
+    }, "Software"), __jsx("div", {
+      style: {
+        fontSize: "1vw",
+        fontWeight: "bold",
+        color: this.props.batmode ? "white" : "black"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 765
+      },
+      __self: this
+    }, "Voice-Activated Drone \uD83C\uDFA4"), __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_7___default.a, {
+      style: {
+        backgroundColor: this.props.batmode ? "black" : "white"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 774
+      },
+      __self: this
+    }, __jsx("div", {
+      style: {
+        fontSize: "0.8vw",
+        color: this.props.batmode ? "white" : "black"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 779
+      },
+      __self: this
+    }, "A drone that listen to voice commands from my laptop: go, stop, up, down, right, and left."), __jsx("div", {
+      style: {
+        marginTop: "1vw"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 788
+      },
+      __self: this
+    }, __jsx(antd_lib_tag__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      style: {
+        fontSize: "0.6vw"
+      },
+      color: "green",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 789
+      },
+      __self: this
+    }, "Node.js")), __jsx("div", {
+      style: {
+        display: "flex",
+        justifyContent: "flex-end"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 793
+      },
+      __self: this
+    }, __jsx(antd_lib_button__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      type: "link",
+      style: {
+        fontSize: "0.6vw"
+      },
+      onClick: () => window.open("https://www.youtube.com/watch?v=f50FJ_ZXtGM", "_blank"),
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 794
+      },
+      __self: this
+    }, "Visit")))))));
   }
 
 }
@@ -3342,7 +4092,7 @@ const CHANGE_BATMODE = "change_batmode";
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!*********************************!*\
   !*** multi ./pages/projects.js ***!
   \*********************************/
